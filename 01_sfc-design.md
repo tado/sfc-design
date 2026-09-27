@@ -453,7 +453,12 @@ pre, code {
    - [Visual Studio Code](https://code.visualstudio.com/)をインストール (環境設定は次回やります)
 2. 作品を共有するためのプラットフォーム
    - [OpenProcessing](https://openprocessing.org/)にユーザー登録
-3. 以下のオンラインフォームに回答
-   - [https://forms.gle/Hjf85SkGLy5eGAEs6](https://forms.gle/Hjf85SkGLy5eGAEs6)
 
-以上3点です!
+---
+
+## 本日の課題
+
+3. 以下のオンラインフォームに回答
+   - [https://forms.gle/ZR2sY8EdMEg7swFL6](https://forms.gle/ZR2sY8EdMEg7swFL6)
+
+![height:400](./img/01_form-qr.png)

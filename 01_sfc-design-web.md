@@ -1,6 +1,6 @@
 # オリエンテーション
 
-![p5.jsとGitHub Copilotによるコード生成のデモ](./img/01_slide12.png)
+![p5.jsとGitHub Copilotによるコード生成のデモ](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide12.png)
 
 「デザインとプログラミング」初回は、まずこの講義の概要と進め方について説明していきます。
 
@@ -12,7 +12,7 @@
 
 ## スライド資料
 
-<!-- スライド資料へのリンクを追加 -->
+- [スライド資料 (PDF)](https://drive.google.com/file/d/1Qb5c_erxIrXLp4pW_dlVV1R51NwZZbQK/view?usp=sharing)
 
 ## 講義の進めかた
 
@@ -40,7 +40,7 @@
 
 ### 慶應義塾の生成AI利用ガイドライン
 
-![慶應義塾における生成AIの利用ガイドライン](./img/01_keio-ai-guideline.png)
+![慶應義塾における生成AIの利用ガイドライン](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_keio-ai-guideline.png)
 
 慶應義塾では「[慶應義塾における生成AIの利用ガイドライン](https://keio-univ.notion.site/ai-guideline)」が公開されています。基本姿勢は **「リスクを正しく理解しながら、生成AIを積極的に活用する」** というものです。この講義でもこの方針を支持します。禁止するのではなく、どう活用するかを考えて行動していくことが重要です。
 
@@ -62,7 +62,7 @@
 
 ### 京都産業大学の生成AI利用ガイドライン
 
-![京都産業大学 生成AI利用ガイドライン](./img/01_kyoto-su-ai-guideline.png)
+![京都産業大学 生成AI利用ガイドライン](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_kyoto-su-ai-guideline.png)
 
 他大学の例として、「[京都産業大学 生成AI利用ガイドライン](https://www.kyoto-su.ac.jp/torikumi/ai-basic-stance/ai-guideline/)」(2026年7月) も紹介します。学生向けに「活用指針・遵守事項・リスク」を具体的な事例つきで解説していて、とても参考になります。生成AIは使い方と心がけ次第で、学びの支援にも妨げにもなるという考え方です。
 
@@ -103,7 +103,7 @@
 
 ### Gemini 学割プラン
 
-![Google Gemini 学割プラン](./img/01_gemini-students.png)
+![Google Gemini 学割プラン](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_gemini-students.png)
 
 [Google Gemini 学割プラン](https://gemini.google/jp/students/?hl=ja) を利用すると、Google AI Plus が **1年間無料** になります。
 
@@ -115,7 +115,7 @@
 
 ### 参考: Text-GPT-p5
 
-![Text-GPT-p5](./img/01_slide10.png)
+![Text-GPT-p5](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide10.png)
 
 [Text-GPT-p5](https://text-gpt-p5.vercel.app/) は、この講義で使用する p5.js のコードを GPT-4o-mini を用いて対話的に生成できるツールです。オープンソースで公開されています。
 
@@ -127,7 +127,7 @@ p5.js (この講義で使用する環境) と GitHub Copilot (コード生成) �
 
 ### プログラマーの歴史 - ハッカーからハイブリッドへ
 
-![History of the Future, Art & Technology from 1965 - Yesterday](./img/01_slide14.png)
+![History of the Future, Art & Technology from 1965 - Yesterday](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide14.png)
 
 History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The Gray Area Festival
 
@@ -144,39 +144,39 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 
 最初の段階は、リアル・プログラマー、つまり「ガチの」プログラマーの時代です。1940年代から50年代にかけての時代です。
 
-![リアル・プログラマーの時代](./img/01_slide17.jpg)
+![リアル・プログラマーの時代](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide17.jpg)
 
 コンピュータ黎明期のプログラマーは女性が多かったことも特徴です。
 
-![コンピュータ黎明期の女性プログラマー](./img/01_slide18a.png)
+![コンピュータ黎明期の女性プログラマー](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide18a.png)
 
-![コンピュータ黎明期の女性プログラマー](./img/01_slide18b.jpg)
+![コンピュータ黎明期の女性プログラマー](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide18b.jpg)
 
 参考: [ENIAC Programmers Project](http://eniacprogrammers.org/)
 
-![ENIAC Programmers Project](./img/01_slide19.jpg)
+![ENIAC Programmers Project](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide19.jpg)
 
 ### Hackers
 
 次はハッカーの時代です。1960年代から70年代にかけて、コンピュータは国家プロジェクトから大学・研究所へと広がっていきました。
 
-![Ken Thompson and Dennis Ritchie at PDP-11](./img/01_slide21.jpg)
+![Ken Thompson and Dennis Ritchie at PDP-11](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide21.jpg)
 
 *Ken Thompson and Dennis Ritchie at PDP-11*
 
 この時代には、PDP-11 などのミニコン (ミニコンピュータ) が普及しました。
 
-![PDP-11](./img/01_slide22.jpg)
+![PDP-11](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide22.jpg)
 
 ハッカーの時代には、コンピュータ・ゲームも誕生しています。
 
 - Spacewar! (MIT 1962) : [https://youtu.be/Rmvb4Hktv7U](https://youtu.be/Rmvb4Hktv7U)
 
-![Spacewar!](./img/01_slide23.jpg)
+![Spacewar!](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide23.jpg)
 
 ハッカーについて考える上で参考になるのが、Paul Graham によるエッセイ「[ハッカーと画家 - Hackers and Painters -](http://practical-scheme.net/trans/hp-j.html)」(May 2003) です。
 
-![Hackers & Painters](./img/01_slide24.jpg)
+![Hackers & Painters](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide24.jpg)
 
 > “ハッカーと画家に共通することは、どちらもものを創る人間だということだ。 作曲家や建築家や作家と同じように、ハッカーと画家がやろうとしているのは、 良いものを創るということだ。 良いものを創ろうとする過程で新しいテクニックを発見することがあり、 それはそれで良いことだが、いわゆる研究活動とはちょっと違う。”
 
@@ -184,21 +184,21 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 
 1980年代になると、ホビーとしてのパソコンが登場し、アマチュアの時代が始まります。
 
-![ホビーとしてのパソコン](./img/01_slide26.jpg)
+![ホビーとしてのパソコン](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide26.jpg)
 
 1980年代には、日本でも「マイコンブーム」が起こりました。
 
-![FM-7の広告](./img/01_slide27a.jpg)
+![FM-7の広告](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide27a.jpg)
 
-![PC-8801mkIISRの広告](./img/01_slide27b.jpg)
+![PC-8801mkIISRの広告](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide27b.jpg)
 
 **Apple II (1977)** : Apple I の後継として、スティーブ・ウォズニアックが開発しました。世界初の個人向けに販売された、完成品マイクロコンピュータです。
 
-![Apple II](./img/01_slide28.jpg)
+![Apple II](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide28.jpg)
 
 **Commodore 64 (1982)** : 単一機種としては最も販売台数の多いパーソナルコンピュータです。販売台数は1250万から1700万台といわれています。
 
-![Commodore 64](./img/01_slide29.jpg)
+![Commodore 64](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide29.jpg)
 
 当時のパソコンでは、BASICを使って誰でも手軽にプログラミングを楽しむことができました。例えば、HELLO WORLDをひたすらくりかえすプログラムは、以下のたった2行で書けます。
 
@@ -207,7 +207,7 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 20 goto 10
 ```
 
-![HELLO WORLDをくりかえす](./img/01_slide30.png)
+![HELLO WORLDをくりかえす](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide30.png)
 
 ちょっと変更して、改行を削除してみます。
 
@@ -216,7 +216,7 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 20 goto 10
 ```
 
-![改行を削除](./img/01_slide31.png)
+![改行を削除](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide31.png)
 
 次に、ランダムに文字を出力してみます。
 
@@ -224,7 +224,7 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 10 print chr$(32+96*rnd(1));
 ```
 
-![ランダムに文字を出力](./img/01_slide32.png)
+![ランダムに文字を出力](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide32.png)
 
 出力する文字を2種類の斜線に限定すると、迷路のような模様が!!
 
@@ -232,7 +232,7 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 10 print chr$(205.5+rnd(1));
 ```
 
-![迷路のような模様](./img/01_slide33.png)
+![迷路のような模様](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide33.png)
 
 数値を変えると、いろいろなバリエーションを作ることができます。
 
@@ -249,13 +249,13 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 
 参考: 10 PRINT [http://10print.org/](http://10print.org/)
 
-![10 PRINT](./img/01_slide35.png)
+![10 PRINT](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide35.png)
 
 ### Hybrids
 
 リアル・プログラマー → ハッカー → アマチュアと来て、次に来るものは何でしょうか? それは、ハイブリッドなプログラマーです。では、ハイブリッド (Hybrid) の意味するものとは何でしょう?
 
-![‘the carrier’ by patricia piccinini, 2012](./img/01_slide37.jpg)
+![‘the carrier’ by patricia piccinini, 2012](https://raw.githubusercontent.com/tado/sfc-design/main/img/01_slide37.jpg)
 
 *‘the carrier’ by patricia piccinini, 2012*
 
@@ -297,6 +297,6 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 
 3\. 最後に以下のオンラインフォームに回答してください。
 
-- [https://forms.gle/Hjf85SkGLy5eGAEs6](https://forms.gle/Hjf85SkGLy5eGAEs6)
+- [https://forms.gle/ZR2sY8EdMEg7swFL6](https://forms.gle/ZR2sY8EdMEg7swFL6)
 
 以上3点です! 締切は次回の授業の前日までとします!
