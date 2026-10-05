@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" font-family="Menlo, Monaco, Consolas, 'Courier New', monospace">
+  <line x1="130" y1="80" x2="760" y2="360" stroke="#333" stroke-width="4"/>
+  <circle cx="130" cy="80" r="10" fill="#2277cc"/>
+  <circle cx="760" cy="360" r="10" fill="#2277cc"/>
+  <text x="130" y="50" text-anchor="middle" font-size="38" fill="#333">(x1, y1)</text>
+  <text x="760" y="420" text-anchor="middle" font-size="38" fill="#333">(x2, y2)</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 530" width="500" height="530" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect x="0" y="0" width="500" height="460" fill="#fff" stroke="#ccc" stroke-width="2"/>
+  <g style="isolation:isolate">
+    <circle cx="180" cy="205" r="120" fill="#00a0e9" style="mix-blend-mode:multiply"/>
+    <circle cx="320" cy="205" r="120" fill="#fff100" style="mix-blend-mode:multiply"/>
+    <circle cx="250" cy="325" r="120" fill="#e4007f" style="mix-blend-mode:multiply"/>
+  </g>
+  <text x="250" y="512" text-anchor="middle" font-size="40" fill="#333" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">色料の三原色 (減法混色)</text>
+</svg>

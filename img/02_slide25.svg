@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" font-family="Menlo, Monaco, Consolas, 'Courier New', monospace">
+  <line x1="130" y1="60" x2="680" y2="60" stroke="#888" stroke-width="3"/>
+  <line x1="130" y1="50" x2="130" y2="70" stroke="#888" stroke-width="3"/>
+  <line x1="680" y1="50" x2="680" y2="70" stroke="#888" stroke-width="3"/>
+  <text x="405.0" y="44" text-anchor="middle" font-size="34" fill="#333">width</text>
+  <line x1="80" y1="110" x2="80" y2="480" stroke="#888" stroke-width="3"/>
+  <line x1="70" y1="110" x2="90" y2="110" stroke="#888" stroke-width="3"/>
+  <line x1="70" y1="480" x2="90" y2="480" stroke="#888" stroke-width="3"/>
+  <text x="62" y="295.0" text-anchor="middle" font-size="34" fill="#333" transform="rotate(-90 62 295.0)">height</text>
+  <rect x="130" y="110" width="550" height="370" fill="#eaf2fb" stroke="#333" stroke-width="4"/>
+  <circle cx="130" cy="110" r="10" fill="#2277cc"/>
+  <text x="148" y="160" font-size="38" fill="#333">(x, y)</text>
+</svg>

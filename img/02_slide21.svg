@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" font-family="Menlo, Monaco, Consolas, 'Courier New', monospace">
+  <circle cx="200" cy="70" r="10" fill="#2277cc"/>
+  <text x="200" y="150" text-anchor="middle" font-size="44" fill="#333">(x, y)</text>
+</svg>
