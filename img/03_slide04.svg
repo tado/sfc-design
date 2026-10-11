@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" width="1080" height="520" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <g font-size="26" text-anchor="middle">
+    <!-- 順次 -->
+    <text x="160" y="40" fill="#2277cc" font-weight="bold">順次</text>
+    <rect x="60" y="80" width="200" height="70" rx="8" fill="#2277cc"/>
+    <text x="160" y="124" fill="#fff">処理</text>
+    <line x1="160" y1="150" x2="160" y2="208" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="60" y="215" width="200" height="70" rx="8" fill="#2277cc"/>
+    <text x="160" y="259" fill="#fff">処理</text>
+    <line x1="160" y1="285" x2="160" y2="343" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="60" y="350" width="200" height="70" rx="8" fill="#2277cc"/>
+    <text x="160" y="394" fill="#fff">処理</text>
+
+    <!-- 分岐 -->
+    <text x="530" y="40" fill="#2277cc" font-weight="bold">分岐</text>
+    <rect x="430" y="80" width="200" height="70" rx="8" fill="#2277cc"/>
+    <text x="530" y="124" fill="#fff">処理</text>
+    <line x1="530" y1="150" x2="530" y2="198" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <polygon points="530,205 640,255 530,305 420,255" fill="#fff" stroke="#2277cc" stroke-width="3"/>
+    <text x="530" y="264" fill="#2277cc">条件</text>
+    <path d="M420,255 H400 V343" fill="none" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M640,255 H660 V343" fill="none" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="330" y="350" width="140" height="70" rx="8" fill="#2277cc"/>
+    <text x="400" y="394" fill="#fff">処理A</text>
+    <rect x="590" y="350" width="140" height="70" rx="8" fill="#2277cc"/>
+    <text x="660" y="394" fill="#fff">処理B</text>
+
+    <!-- 反復 -->
+    <text x="900" y="40" fill="#2277cc" font-weight="bold">反復</text>
+    <rect x="800" y="80" width="200" height="70" rx="8" fill="#2277cc"/>
+    <text x="900" y="124" fill="#fff">処理</text>
+    <line x1="900" y1="150" x2="900" y2="198" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <polygon points="900,205 1010,255 900,305 790,255" fill="#fff" stroke="#2277cc" stroke-width="3"/>
+    <text x="900" y="264" fill="#2277cc">条件</text>
+    <line x1="900" y1="305" x2="900" y2="343" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="935" y="335" font-size="20" fill="#444" text-anchor="start">true</text>
+    <rect x="800" y="350" width="200" height="70" rx="8" fill="#2277cc"/>
+    <text x="900" y="394" fill="#fff">処理</text>
+    <path d="M800,385 H760 V255 H783" fill="none" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M1010,255 H1050 V470" fill="none" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="1030" y="240" font-size="20" fill="#444">false</text>
+  </g>
+</svg>
