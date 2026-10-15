@@ -242,7 +242,7 @@ History of the Future, Art & Technology from 1965 - Yesterday | Casey Reas | The
 10 print chr$(198.5+rnd(1));
 10 print chr$(204+(int(rnd(1)+.5)*3));
 10 print chr$(204+(rnd(1)+.5)*3);
-10 print chr$(181+(int(rnd(1)+.5)*3)+(ing(rnd(1)+.5)));
+10 print chr$(181+(int(rnd(1)+.5)*3)+(int(rnd(1)+.5)));
 10 print chr$(181+(int(rnd(1)+.5)*3));
 10 poke 1024+rnd(1)*1000,77.5+rnd(1)
 ```

@@ -320,7 +320,7 @@ pre, code {
 
 ## プログラマーの歴史 - アマチュア
 
-- Commodor 64 (1984)
+- Commodore 64 (1982)
 - 単一機種としては最も販売台数の多いパーソナルコンピュータ
 - 1250万から1700万台
 
@@ -388,7 +388,7 @@ pre, code {
 10 print chr$(198.5+rnd(1));
 10 print chr$(204+(int(rnd(1)+.5)*3));
 10 print chr$(204+(rnd(1)+.5)*3);
-10 print chr$(181+(int(rnd(1)+.5)*3)+(ing(rnd(1)+.5)));
+10 print chr$(181+(int(rnd(1)+.5)*3)+(int(rnd(1)+.5)));
 10 print chr$(181+(int(rnd(1)+.5)*3));
 10 poke 1024+rnd(1)*1000,77.5+rnd(1)
 ```
