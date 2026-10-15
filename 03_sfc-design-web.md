@@ -446,6 +446,7 @@ function setup() {
 - 完成した作品には、タイトルをつける
 - 完成した作品はOpenProcessingに投稿してURLを提出
 - 必ず TAGS: sfc261016 を入れてください
+- 前回の[提出作品](https://openprocessing.org/browse?q=sfc261009&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
 - 提出期限 10/22/2026
 
 [課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSfhS3oIn2oNGNT-FwfUjKQLMedSXPpvTeUc80qJsDx341hINg/viewform?usp=publish-editor)

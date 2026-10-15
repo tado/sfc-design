@@ -616,3 +616,4 @@ function setup() {
   - 完成した作品には、タイトルをつける
   - 投稿したURLをアンケートから提出
   - TAGS: sfc261016 を必ずつけること
+  - 前回の[提出作品](https://openprocessing.org/browse?q=sfc261009&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
