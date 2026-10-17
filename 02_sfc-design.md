@@ -1,28 +1,8 @@
 ---
 marp: true
+theme: tadokoro
 paginate: true
 ---
-<style>
-section {
-  font-family: 'Hiragino Sans W4';
-  color: #444;
-  font-size: 24px;
-}
-b, strong {
-  font-family: 'Hiragino Sans W8';
-}
-ol {
-  list-style-type: decimal;
-}
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Hiragino Sans W8';
-  color: #2277cc;
-}
-pre, code {
-  font-family: 'JetBrains Mono Slashed', 'Hiragino Sans W4';
-  line-height: 1.3;
-}
-</style>
 
 # デザインとプログラミング 2026<br>かたちとコード / 基本図形と色彩による画面構成
 
@@ -40,6 +20,8 @@ pre, code {
 - 実習
 
 ---
+
+<!-- _class: bigtxt -->
 
 # p5.jsはじめの一歩
 
@@ -515,7 +497,9 @@ function draw() {
 
 ---
 
-# OpenProcessingにアカウントを作成してコードをシェア
+<!-- _class: bigtxt -->
+
+# OpenProcessingにアカウントを作成して<br>コードをシェア
 
 ---
 
@@ -537,6 +521,8 @@ function draw() {
 
 ---
 
+<!-- _class: bigtxt -->
+
 # 本日の課題 : p5.js基本図形と色による画面構成
 
 ---
@@ -551,6 +537,8 @@ function draw() {
 - 次回の授業の冒頭で簡単に作品をいくつか紹介します
 
 ---
+
+<!-- _class: bigtxt -->
 
 # かたちとコード
 
@@ -572,6 +560,8 @@ function draw() {
 コンピューターの登場黎明期から、様々な表現が行われてきた
 
 ---
+
+<!-- _class: bigtxt -->
 
 # 過去へタイムスリップ<br>1960〜70年代のコンピュータ・アート
 
