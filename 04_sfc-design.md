@@ -465,3 +465,57 @@ function draw() {
   - 投稿したURLをアンケートから提出
   - TAGS: sfc261023 を必ずつけること
   - 前回の[提出作品](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
+
+---
+
+## 参考作品
+
+- 円の大きさと色をランダムにした例
+- 円の大きさ (sizes) と色 (colors) も配列で管理
+
+```javascript
+const NUM = 100; //円の数
+let loc = []; //円の中心の位置ベクトル
+let vel = []; //円の速度ベクトル
+let sizes = []; //円の大きさ
+let colors = []; //円の色
+
+function setup() {
+  createCanvas(windowWidth, windowHeight); //画面を生成
+  frameRate(60); //フレームレート
+  for (let i = 0; i < NUM; i++) {
+    loc[i] = createVector(width / 2, height / 2);
+    vel[i] = createVector(random(-10, 10), random(-10, 10));
+    sizes[i] = random(10, 50);
+    colors[i] = color(random(255), random(255), random(255));
+  }
+}
+```
+
+---
+
+## 参考作品
+
+```javascript
+function draw() {
+  background(0); //背景を描画
+  noStroke(); //枠線なし
+  //円の数だけくりかえす
+  for (let i = 0; i < NUM; i++) {
+    const radius = sizes[i] / 2;
+    loc[i].add(vel[i]); //円の座標を更新
+    //もし画面の左端、または右端に到達したら
+    if (loc[i].x < radius || loc[i].x > width - radius) {
+      loc[i].x = constrain(loc[i].x, radius, width - radius);
+      vel[i].x = vel[i].x * -1; //X方向のスピードを反転
+    }
+    //もし画面の下端、または上端に到達したら
+    if (loc[i].y < radius || loc[i].y > height - radius) {
+      loc[i].y = constrain(loc[i].y, radius, height - radius);
+      vel[i].y = vel[i].y * -1; //Y方向のスピードを反転
+    }
+    fill(colors[i]);
+    circle(loc[i].x, loc[i].y, sizes[i]);
+  }
+}
+```
