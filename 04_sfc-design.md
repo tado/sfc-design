@@ -492,12 +492,10 @@ function draw() {
     loc[i].add(vel[i]); //円の座標を更新
     //もし画面の左端、または右端に到達したら
     if (loc[i].x < radius || loc[i].x > width - radius) {
-      loc[i].x = constrain(loc[i].x, radius, width - radius);
       vel[i].x = vel[i].x * -1; //X方向のスピードを反転
     }
     //もし画面の下端、または上端に到達したら
     if (loc[i].y < radius || loc[i].y > height - radius) {
-      loc[i].y = constrain(loc[i].y, radius, height - radius);
       vel[i].y = vel[i].y * -1; //Y方向のスピードを反転
     }
     fill(colors[i]);

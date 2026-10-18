@@ -306,7 +306,7 @@ function draw() {
 
 たくさんの図形を同時に動かすプログラムを発展させて、円ごとに色や大きさを変化させてみましょう。位置や速度と同じように、円の大きさ (sizes) と色 (colors) も配列で管理し、setup() の中でそれぞれランダムな値を設定します。色は color() 関数で作成して、配列に格納しています。
 
-また、円の大きさがそれぞれ異なるので、円の半径を考慮して、円が画面の端からはみ出さずにバウンドするようにしています。constrain() 関数は、値を指定した範囲 (最小値〜最大値) の中に収めます。
+また、円の大きさがそれぞれ異なるので、円の半径を考慮して、円の縁が画面の端に届いたところでバウンドするようにしています。
 
 ```javascript
 const NUM = 100; //円の数
@@ -336,13 +336,11 @@ function draw() {
 
     //もし画面の左端、または右端に到達したら
     if (loc[i].x < radius || loc[i].x > width - radius) {
-      loc[i].x = constrain(loc[i].x, radius, width - radius);
       vel[i].x = vel[i].x * -1; //X方向のスピードを反転
     }
 
     //もし画面の下端、または上端に到達したら
     if (loc[i].y < radius || loc[i].y > height - radius) {
-      loc[i].y = constrain(loc[i].y, radius, height - radius);
       vel[i].y = vel[i].y * -1; //Y方向のスピードを反転
     }
 
@@ -368,7 +366,6 @@ function draw() {
 - [p5.js リファレンス: p5.Vector](https://p5js.org/reference/p5/p5.Vector/)
 - [p5.js リファレンス: Array](https://p5js.org/reference/p5/Array/)
 - [p5.js リファレンス: color()](https://p5js.org/reference/p5/color/)
-- [p5.js リファレンス: constrain()](https://p5js.org/reference/p5/constrain/)
 - [OpenProcessing](https://www.openprocessing.org/)
 
 ## 本日の課題
