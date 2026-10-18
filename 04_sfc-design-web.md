@@ -396,6 +396,7 @@ function draw() {
 蛍の光を「動き」で表現した作品例です。位置・速度・大きさ・色を配列で管理するところは「色や大きさを変化させる」のコードと同じですが、蛍がふわふわと漂う動きと、1匹ずつ違うタイミングでゆっくり明滅する光を加えています。授業で扱っていない関数 (sin()、cos()、limit() など) も使っているので、気になったらリファレンスで調べてみましょう。
 
 - [OpenProcessingで見る](https://openprocessing.org/@tadokoro/3037623)
+- 参考作品 : [蛍のよりみち。](https://openprocessing.org/@tadokoro/3037612)
 
 ```javascript
 // 作品例「蛍の光」

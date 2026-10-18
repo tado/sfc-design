@@ -540,6 +540,7 @@ function draw() {
 
 - 蛍の光を「動き」で表現した作品例
 - [OpenProcessingで見る](https://openprocessing.org/@tadokoro/3037623)
+- 参考作品 : [蛍のよりみち。](https://openprocessing.org/@tadokoro/3037612)
 
 ```javascript
 // 作品例「蛍の光」
