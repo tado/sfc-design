@@ -533,3 +533,109 @@ function draw() {
   - 投稿したURLをアンケートから提出
   - TAGS: sfc261023 を必ずつけること
   - 前回の[提出作品](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
+
+---
+
+## 作品例 : 蛍の光
+
+- 蛍の光を「動き」で表現した作品例
+- [OpenProcessingで見る](https://openprocessing.org/@tadokoro/3037623)
+
+```javascript
+// 作品例「蛍の光」
+// 元のコードと同じように、円の位置・速度・大きさ・色を配列で管理します。
+const NUM = 100; // 蛍の数
+const SPEED = 0.55; // 飛ぶ速さ
+let loc = []; // 円の中心の位置ベクトル
+let vel = []; // 円の速度ベクトル
+let sizes = []; // 円の大きさ
+let colors = []; // 光の色（黄色の強さ）
+let phases = []; // 光るタイミングのずれ
+```
+
+---
+
+## 作品例 : 蛍の光
+
+- setup() : 位置、速度、大きさ、色、光るタイミングを配列に設定
+
+```javascript
+// setup：最初に1回だけ実行します。
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  frameRate(60);
+  noStroke();
+  for (let i = 0; i < NUM; i++) {
+    loc[i] = createVector(random(width), random(height));
+    vel[i] = createVector(random(-SPEED, SPEED), random(-SPEED, SPEED));
+    sizes[i] = random(2, 4.5);
+    colors[i] = random(195, 235);
+    phases[i] = random(TWO_PI);
+  }
+}
+```
+
+---
+
+## 作品例 : 蛍の光
+
+- draw() (1/3) : ふわふわと漂う動き
+
+```javascript
+// draw：少しずつ位置を変えて描くことをくりかえします。
+function draw() {
+  background(7, 22, 33);
+  //drawMountains();
+  for (let i = 0; i < NUM; i++) {
+    // 進む向きを少しずつ変えると、ふわふわと漂う動きになります。
+    vel[i].x += sin(frameCount * 0.012 + phases[i]) * 0.008;
+    vel[i].y += cos(frameCount * 0.015 + phases[i]) * 0.008;
+    vel[i].limit(SPEED);
+    loc[i].add(vel[i]);
+```
+
+---
+
+## 作品例 : 蛍の光
+
+- draw() (2/3) : 画面の端での跳ね返り
+
+```javascript
+    // 元のコードと同じように、端まで来たら跳ね返ります。
+    const radius = sizes[i] / 2;
+    if (loc[i].x < radius || loc[i].x > width - radius) {
+      vel[i].x *= -1;
+    }
+    if (loc[i].y < radius || loc[i].y > height - radius) {
+      vel[i].y *= -1;
+    }
+```
+
+---
+
+## 作品例 : 蛍の光
+
+- draw() (3/3) : 1匹ずつ違うタイミングで明滅する光
+
+```javascript
+    // sinの値で明るさをゆっくり増減させます。
+    // phases[i]で、1匹ずつ違うタイミングで光るようにしています。
+    const glowStrength = (sin(frameCount * 0.025 + phases[i]) + 1) / 2;
+    // 透明な大きい円と、小さな明るい円を重ねて光を表現します。
+    fill(colors[i], 237, 139, glowStrength * 5);
+    circle(loc[i].x, loc[i].y, sizes[i] * 8);
+    fill(colors[i], 237, 139, glowStrength * 18);
+    circle(loc[i].x, loc[i].y, sizes[i] * 4);
+    fill(233, 248, 178, glowStrength * 220);
+    circle(loc[i].x, loc[i].y, sizes[i]);
+  }
+}
+```
+
+---
+
+## 作品例 : 蛍の光
+
+- 蛍がふわふわと漂いながら、ゆっくり明滅する
+
+![height:420](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_hotaru.png)

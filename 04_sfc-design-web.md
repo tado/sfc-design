@@ -390,3 +390,73 @@ function draw() {
 
 <!-- 提出フォームのURLを追加 -->
 [課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSeXX3Senkm_D5kG7B6liuZtPiXVZz1V6m6Ep6wxz-97y60_lQ/viewform?usp=publish-editor)
+
+**作品例 : 蛍の光**
+
+蛍の光を「動き」で表現した作品例です。位置・速度・大きさ・色を配列で管理するところは「色や大きさを変化させる」のコードと同じですが、蛍がふわふわと漂う動きと、1匹ずつ違うタイミングでゆっくり明滅する光を加えています。授業で扱っていない関数 (sin()、cos()、limit() など) も使っているので、気になったらリファレンスで調べてみましょう。
+
+- [OpenProcessingで見る](https://openprocessing.org/@tadokoro/3037623)
+
+```javascript
+// 作品例「蛍の光」
+// 元のコードと同じように、円の位置・速度・大きさ・色を配列で管理します。
+const NUM = 100; // 蛍の数
+const SPEED = 0.55; // 飛ぶ速さ
+let loc = []; // 円の中心の位置ベクトル
+let vel = []; // 円の速度ベクトル
+let sizes = []; // 円の大きさ
+let colors = []; // 光の色（黄色の強さ）
+let phases = []; // 光るタイミングのずれ
+
+// setup：最初に1回だけ実行します。
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  frameRate(60);
+  noStroke();
+
+  for (let i = 0; i < NUM; i++) {
+    loc[i] = createVector(random(width), random(height));
+    vel[i] = createVector(random(-SPEED, SPEED), random(-SPEED, SPEED));
+    sizes[i] = random(2, 4.5);
+    colors[i] = random(195, 235);
+    phases[i] = random(TWO_PI);
+  }
+}
+
+// draw：少しずつ位置を変えて描くことをくりかえします。
+function draw() {
+  background(7, 22, 33);
+  //drawMountains();
+
+  for (let i = 0; i < NUM; i++) {
+    // 進む向きを少しずつ変えると、ふわふわと漂う動きになります。
+    vel[i].x += sin(frameCount * 0.012 + phases[i]) * 0.008;
+    vel[i].y += cos(frameCount * 0.015 + phases[i]) * 0.008;
+    vel[i].limit(SPEED);
+    loc[i].add(vel[i]);
+
+    // 元のコードと同じように、端まで来たら跳ね返ります。
+    const radius = sizes[i] / 2;
+    if (loc[i].x < radius || loc[i].x > width - radius) {
+      vel[i].x *= -1;
+    }
+    if (loc[i].y < radius || loc[i].y > height - radius) {
+      vel[i].y *= -1;
+    }
+
+    // sinの値で明るさをゆっくり増減させます。
+    // phases[i]で、1匹ずつ違うタイミングで光るようにしています。
+    const glowStrength = (sin(frameCount * 0.025 + phases[i]) + 1) / 2;
+
+    // 透明な大きい円と、小さな明るい円を重ねて光を表現します。
+    fill(colors[i], 237, 139, glowStrength * 5);
+    circle(loc[i].x, loc[i].y, sizes[i] * 8);
+    fill(colors[i], 237, 139, glowStrength * 18);
+    circle(loc[i].x, loc[i].y, sizes[i] * 4);
+    fill(233, 248, 178, glowStrength * 220);
+    circle(loc[i].x, loc[i].y, sizes[i]);
+  }
+}
+```
+
+![蛍の光](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_hotaru.png)
