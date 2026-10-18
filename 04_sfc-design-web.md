@@ -20,6 +20,7 @@
 - 条件分岐 + アニメーション
 - ベクトル (向きと大きさ) で動きを再定義
 - たくさんの図形を同時に動かす (配列)
+- 色や大きさを変化させる
 - 実習
 
 ## アニメーション
@@ -301,45 +302,11 @@ function draw() {
 
 ![100個の円が同時に動く](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide35.png)
 
-## 関連リンク
+## 色や大きさを変化させる
 
-- [p5.js Web Editor](https://editor.p5js.org/)
-- [p5.js リファレンス](https://p5js.org/reference/)
-- [p5.js リファレンス: setup()](https://p5js.org/reference/p5/setup/)
-- [p5.js リファレンス: draw()](https://p5js.org/reference/p5/draw/)
-- [p5.js リファレンス: frameRate()](https://p5js.org/reference/p5/frameRate/)
-- [p5.js リファレンス: if](https://p5js.org/reference/p5/if/)
-- [p5.js リファレンス: createVector()](https://p5js.org/reference/p5/createVector/)
-- [p5.js リファレンス: p5.Vector](https://p5js.org/reference/p5/p5.Vector/)
-- [p5.js リファレンス: Array](https://p5js.org/reference/p5/Array/)
-- [OpenProcessing](https://www.openprocessing.org/)
+たくさんの図形を同時に動かすプログラムを発展させて、円ごとに色や大きさを変化させてみましょう。位置や速度と同じように、円の大きさ (sizes) と色 (colors) も配列で管理し、setup() の中でそれぞれランダムな値を設定します。色は color() 関数で作成して、配列に格納しています。
 
-## 本日の課題
-
-テーマ: 「アニメーションにランダムな要素を追加する」
-
-本日の最終のコード (たくさんの図形を同時に動かす) を改造して、ランダムな要素を追加してみましょう! 次回の授業の冒頭で簡単に作品をいくつか紹介します。
-
-例えば、以下のような改造が考えられます。
-
-- 円の色をランダムな色に
-- 円の大きさをランダムに
-- (応用) 円の動きをランダムに
-
-提出方法は以下の通りです。
-
-- 完成した作品には、タイトルをつける
-- 完成した作品はOpenProcessingに投稿してURLを提出
-- 必ず TAGS: sfc261023 を入れてください
-- 前回の[提出作品](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
-- 提出期限 10/29/2026
-
-<!-- 提出フォームのURLを追加 -->
-[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSeXX3Senkm_D5kG7B6liuZtPiXVZz1V6m6Ep6wxz-97y60_lQ/viewform?usp=publish-editor)
-
-### 参考作品
-
-円の大きさと色をランダムにした例です。円の大きさ (sizes) と色 (colors) も配列で管理しています。また、円の半径を考慮して、円が画面の端からはみ出さずにバウンドするようにしています。
+また、円の大きさがそれぞれ異なるので、円の半径を考慮して、円が画面の端からはみ出さずにバウンドするようにしています。constrain() 関数は、値を指定した範囲 (最小値〜最大値) の中に収めます。
 
 ```javascript
 const NUM = 100; //円の数
@@ -384,3 +351,45 @@ function draw() {
   }
 }
 ```
+
+色や大きさの異なる円が、同時に動きます!
+
+![色や大きさを変化させる](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide41.png)
+
+## 関連リンク
+
+- [p5.js Web Editor](https://editor.p5js.org/)
+- [p5.js リファレンス](https://p5js.org/reference/)
+- [p5.js リファレンス: setup()](https://p5js.org/reference/p5/setup/)
+- [p5.js リファレンス: draw()](https://p5js.org/reference/p5/draw/)
+- [p5.js リファレンス: frameRate()](https://p5js.org/reference/p5/frameRate/)
+- [p5.js リファレンス: if](https://p5js.org/reference/p5/if/)
+- [p5.js リファレンス: createVector()](https://p5js.org/reference/p5/createVector/)
+- [p5.js リファレンス: p5.Vector](https://p5js.org/reference/p5/p5.Vector/)
+- [p5.js リファレンス: Array](https://p5js.org/reference/p5/Array/)
+- [p5.js リファレンス: color()](https://p5js.org/reference/p5/color/)
+- [p5.js リファレンス: constrain()](https://p5js.org/reference/p5/constrain/)
+- [OpenProcessing](https://www.openprocessing.org/)
+
+## 本日の課題
+
+テーマ: 「アニメーションで表現する」
+
+今回学んだアニメーション (setupとdraw) のしくみを使って、「動き」で何かを表現してみましょう! 同じ円でも、速さや方向、跳ね返り方、色の変化によって、まったく違った印象になります。本日のコードをもとに改造しても、ゼロから作ってもOKです。次回の授業の冒頭で簡単に作品をいくつか紹介します。
+
+例えば、以下のような表現が考えられます。
+
+- 自然現象や風景を表現する (雨、雪、泡、蛍、星空など)
+- 第2回の作品 (基本図形と色による画面構成) に動きを加える
+- 群れや集団を表現する (魚の群れ、花火、人混みなど)
+
+提出方法は以下の通りです。
+
+- 完成した作品には、タイトルをつける
+- 完成した作品はOpenProcessingに投稿してURLを提出
+- 必ず TAGS: sfc261023 を入れてください
+- 前回の[提出作品](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
+- 提出期限 10/29/2026
+
+<!-- 提出フォームのURLを追加 -->
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSeXX3Senkm_D5kG7B6liuZtPiXVZz1V6m6Ep6wxz-97y60_lQ/viewform?usp=publish-editor)
