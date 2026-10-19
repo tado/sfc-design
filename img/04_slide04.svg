@@ -11,7 +11,7 @@
   <line x1="230" y1="200" x2="230" y2="248" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
   <rect x="60" y="254" width="340" height="90" rx="10" fill="#2277cc"/>
   <text x="230" y="310" text-anchor="middle" font-size="36" fill="#fff" font-family="Menlo, monospace">draw()</text>
-  <path d="M400,299 H470 V400 H230 V352" fill="none" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M230,344 V400 H470 V299 H406" fill="none" stroke="#444" stroke-width="3" marker-end="url(#arrow)"/>
   <text x="495" y="350" font-size="28" fill="#444">プログラムが終了するまで</text>
   <text x="495" y="390" font-size="28" fill="#444">くりかえし</text>
 </svg>
