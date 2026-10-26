@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" width="760" height="560" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2277cc"/>
+    </marker>
+  </defs>
+  <rect x="120" y="80" width="600" height="450" fill="#55a6f0"/>
+  <line x1="124" y1="40" x2="716" y2="40" stroke="#2277cc" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="330" y="18" width="180" height="44" fill="#fff"/>
+  <text x="420" y="51" text-anchor="middle" font-size="32" font-weight="bold" fill="#2277cc">640 pixel</text>
+  <line x1="70" y1="84" x2="70" y2="526" stroke="#2277cc" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="48" y="215" width="44" height="180" fill="#fff"/>
+  <text x="81" y="305" text-anchor="middle" font-size="32" font-weight="bold" fill="#2277cc" transform="rotate(-90 81 305)">480 pixel</text>
+</svg>

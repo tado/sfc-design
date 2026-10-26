@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 430" width="920" height="430" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2277cc"/>
+    </marker>
+    <style>
+      .label { font-size: 24px; fill: #2277cc; }
+      .px { font-size: 16px; fill: #2277cc; }
+      .cell { font-size: 26px; font-weight: bold; fill: #fff; text-anchor: middle; }
+      .r { fill: #ff2a1a; } .g { fill: #22dd33; } .b { fill: #1a44dd; } .a { fill: #999; } .k { fill: #444; }
+    </style>
+  </defs>
+
+  <!-- フルカラー (32bit): 1 pixel = R G B A -->
+  <line x1="244" y1="22" x2="484" y2="22" stroke="#2277cc" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="320" y="10" width="88" height="24" fill="#fff"/>
+  <text x="364" y="29" text-anchor="middle" class="px">1 pixel</text>
+  <text x="225" y="74" text-anchor="end" class="label">フルカラー</text>
+  <text x="225" y="104" text-anchor="end" class="label">(32bit)</text>
+  <g transform="translate(244 40)">
+    <rect x="0" width="58" height="70" class="r"/><text x="29" y="45" class="cell">R</text>
+    <rect x="60" width="58" height="70" class="g"/><text x="89" y="45" class="cell">G</text>
+    <rect x="120" width="58" height="70" class="b"/><text x="149" y="45" class="cell">B</text>
+    <rect x="180" width="58" height="70" class="a"/><text x="209" y="45" class="cell">A</text>
+    <rect x="240" width="58" height="70" class="r"/><text x="269" y="45" class="cell">R</text>
+    <rect x="300" width="58" height="70" class="g"/><text x="329" y="45" class="cell">G</text>
+    <rect x="360" width="58" height="70" class="b"/><text x="389" y="45" class="cell">B</text>
+    <rect x="420" width="58" height="70" class="a"/><text x="449" y="45" class="cell">A</text>
+    <rect x="480" width="58" height="70" class="r"/><text x="509" y="45" class="cell">R</text>
+  </g>
+
+  <!-- フルカラー アルファ無し (24bit): 1 pixel = R G B -->
+  <line x1="244" y1="162" x2="424" y2="162" stroke="#2277cc" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="290" y="150" width="88" height="24" fill="#fff"/>
+  <text x="334" y="169" text-anchor="middle" class="px">1 pixel</text>
+  <text x="225" y="205" text-anchor="end" class="label">フルカラー</text>
+  <text x="225" y="235" text-anchor="end" class="label">アルファ無し</text>
+  <text x="225" y="265" text-anchor="end" class="label">(24bit)</text>
+  <g transform="translate(244 180)">
+    <rect x="0" width="58" height="70" class="r"/><text x="29" y="45" class="cell">R</text>
+    <rect x="60" width="58" height="70" class="g"/><text x="89" y="45" class="cell">G</text>
+    <rect x="120" width="58" height="70" class="b"/><text x="149" y="45" class="cell">B</text>
+    <rect x="180" width="58" height="70" class="r"/><text x="209" y="45" class="cell">R</text>
+    <rect x="240" width="58" height="70" class="g"/><text x="269" y="45" class="cell">G</text>
+    <rect x="300" width="58" height="70" class="b"/><text x="329" y="45" class="cell">B</text>
+    <rect x="360" width="58" height="70" class="r"/><text x="389" y="45" class="cell">R</text>
+    <rect x="420" width="58" height="70" class="g"/><text x="449" y="45" class="cell">G</text>
+    <rect x="480" width="58" height="70" class="b"/><text x="509" y="45" class="cell">B</text>
+  </g>
+
+  <!-- グレースケール (8bit): 1 pixel = K -->
+  <line x1="244" y1="312" x2="304" y2="312" stroke="#2277cc" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="314" y="318" class="px">1 pixel</text>
+  <text x="225" y="370" text-anchor="end" class="label">グレースケール</text>
+  <text x="225" y="400" text-anchor="end" class="label">(8bit)</text>
+  <g transform="translate(244 330)">
+    <rect x="0" width="58" height="70" class="k"/><text x="29" y="45" class="cell">K</text>
+    <rect x="60" width="58" height="70" class="k"/><text x="89" y="45" class="cell">K</text>
+    <rect x="120" width="58" height="70" class="k"/><text x="149" y="45" class="cell">K</text>
+    <rect x="180" width="58" height="70" class="k"/><text x="209" y="45" class="cell">K</text>
+    <rect x="240" width="58" height="70" class="k"/><text x="269" y="45" class="cell">K</text>
+    <rect x="300" width="58" height="70" class="k"/><text x="329" y="45" class="cell">K</text>
+    <rect x="360" width="58" height="70" class="k"/><text x="389" y="45" class="cell">K</text>
+    <rect x="420" width="58" height="70" class="k"/><text x="449" y="45" class="cell">K</text>
+    <rect x="480" width="58" height="70" class="k"/><text x="509" y="45" class="cell">K</text>
+  </g>
+</svg>
