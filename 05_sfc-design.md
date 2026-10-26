@@ -127,6 +127,23 @@ paginate: true
 
 ---
 
+## 画像を読み込む
+
+- 画像ファイルの読み込みには、loadImage() を使う
+- p5.js 2.0 以降では、async と await を使って読み込む
+  - setup() の前に async をつける → 処理の完了を「待つ」ことができる関数になる
+  - loadImage() の前に await をつける → 画像の読み込みが終わるまで待ってから、次の行に進む
+- setup() が終わってから draw() が始まるので、draw() の中でも読み込んだ画像を使える
+
+```javascript
+async function setup() {
+  createCanvas(windowWidth, windowHeight);
+  img = await loadImage('./photo.jpg');
+}
+```
+
+---
+
 ## 画像を表示する
 
 - 画像を表示するプログラム
@@ -134,14 +151,10 @@ paginate: true
 ```javascript
 let img; //画像データ
 
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //左上を起点にして画像を表示
   image(img, 0, 0);
 }
@@ -163,13 +176,11 @@ function setup() {
 
 ```javascript
 let img; //画像データ
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-function setup() {
+
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像をキャンバスのサイズに合わせてリサイズ
   img.resize(width, height);
   //左上を起点にして画像を表示
@@ -204,14 +215,10 @@ function setup() {
 ```javascript
 let img; //画像データ
 
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像をキャンバスのサイズに合わせてリサイズ
   img.resize(width, height);
 }
@@ -242,14 +249,10 @@ function draw() {
 ```javascript
 let img; //画像データ
 
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像をキャンバスのサイズに合わせてリサイズ
   img.resize(width, height);
 }
@@ -306,14 +309,10 @@ function draw() {
 ```javascript
 let img; //画像データ
 
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像をキャンバスのサイズに合わせてリサイズ
   img.resize(width, height);
   //背景を黒に
@@ -370,14 +369,10 @@ function draw() {
 ```javascript
 let img; //画像データ
 
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像をリサイズ
   img.resize(width, height);
   background(0);
@@ -440,14 +435,10 @@ function draw() {
 ```javascript
 let img; //画像データ
 
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像をリサイズ
   img.resize(width, height);
   //混色を加算合成に
@@ -506,13 +497,11 @@ function draw() {
 
 ```javascript
 let img; //画像データ
-//プレロード
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-function setup() {
+
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像をリサイズ
   img.resize(width, height);
   //背景を黒に
@@ -583,13 +572,10 @@ function draw() {
 ```javascript
 let img; //画像データ
 
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像を画面の大きさにリサイズ
   img.resize(width, height);
   //背景を黒に
@@ -656,13 +642,10 @@ function draw() {
 ```javascript
 let img; //画像データ
 
-function preload() {
-  //画像をロード
-  img = loadImage('./photo.jpg');
-}
-
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  //画像をロード (読み込みが終わるまで待つ)
+  img = await loadImage('./photo.jpg');
   //画像を画面の大きさにリサイズ
   img.resize(width, height);
   //背景を黒に
