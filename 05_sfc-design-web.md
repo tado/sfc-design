@@ -7,8 +7,6 @@ summary: "今回は、p5.jsで画像ファイルを読み込み、そのデー�
 image: "https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/05_slide30.jpg"
 ---
 
-
-
 ![円の大きさと色で画像を再構成する](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/05_slide30.jpg?ssl=1)
 
 今回は、p5.jsで画像ファイルを読み込み、そのデータを分析して、新たなイメージとして再合成する方法について学びます。
@@ -33,13 +31,11 @@ p5.jsに読み込んだ画像ファイルのデータで表現してみましょ
 - 前回の[提出作品](https://openprocessing.org/browse?q=sfc261023&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
 - 提出期限 11/5/2026
 
-<!-- 提出フォームのURLを追加 -->
-[課題提出フォーム](URL)
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdrf_q_BhOVFu71nG6MCat8_uuRo5TWkCp2JAow6ASTmvEKZg/viewform?usp=publish-editor)
 
 ## スライド資料
 
-<!-- スライド資料へのリンクを追加 -->
-[スライド資料: p5.jsで画像データを扱う – 画像の分析・再合成](URL)
+[スライド資料: p5.jsで画像データを扱う – 画像の分析・再合成](https://drive.google.com/file/d/1qrmJLm_T8B9lbxpVwMPxbCh4QWF79AD8/view?usp=sharing)
 
 ## 今日の内容
 
@@ -521,5 +517,4 @@ p5.jsに読み込んだ画像ファイルのデータで表現してみましょ
 - 前回の[提出作品](https://openprocessing.org/browse?q=sfc261023&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
 - 提出期限 11/5/2026
 
-<!-- 提出フォームのURLを追加 -->
-[課題提出フォーム](URL)
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdrf_q_BhOVFu71nG6MCat8_uuRo5TWkCp2JAow6ASTmvEKZg/viewform?usp=publish-editor)
