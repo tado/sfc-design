@@ -1,6 +1,16 @@
-# 反復と乱数
+---
+title: "反復と乱数"
+date: "2026-10-11T14:51:13+09:00"
+lastmod: "2026-10-17T09:45:59+09:00"
+url: "/sfc-design26/19834.html"
+categories: ["sfc-design26"]
+summary: "今回は、プログラムの基本的な構造のひとつである「反復 (くりかえし)」について学びます。"
+image: "/wp-content/uploads/2026/10/03_slide46.png"
+wp_id: 19834
+shortlink: "https://wp.me/pU1U9-59U"
+---
 
-![回転のくりかえし](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide33.png)
+<figure class="wp-block-image size-full"><a href="/wp-content/uploads/2026/10/03_slide46.png"><img loading="lazy" decoding="async" width="800" height="675" src="/wp-content/uploads/2026/10/03_slide46.png" alt="" class="wp-image-19837" srcset="/wp-content/uploads/2026/10/03_slide46-300x253.png 300w, /wp-content/uploads/2026/10/03_slide46-768x648.png 768w, /wp-content/uploads/2026/10/03_slide46.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></a></figure>
 
 今回は、プログラムの基本的な構造のひとつである「反復 (くりかえし)」について学びます。
 
@@ -12,8 +22,20 @@
 
 ## スライド資料
 
-<!-- スライド資料へのリンクを追加 -->
-[スライド資料: 反復と乱数](URL)
+[スライド資料: 反復と乱数](https://drive.google.com/file/d/1nx4HaOdf8v9eXiyDS3Ua4484sXVboRby/view?usp=sharing)
+
+## 本日の課題
+
+テーマ: 「乱数 (random) と繰り返し (for) を使用した表現」
+
+今回学んだ乱数 (random) と繰り返し (for) を使用して、自由な発想で表現してみましょう! 次回の授業の冒頭で簡単に作品をいくつか紹介します。
+
+- 完成した作品には、タイトルをつける
+- 完成した作品はOpenProcessingに投稿してURLを提出
+- 必ず TAGS: [sfc261016](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0#) を入れてください
+- 提出期限 10/22/2026
+
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSfhS3oIn2oNGNT-FwfUjKQLMedSXPpvTeUc80qJsDx341hINg/viewform?usp=dialog)
 
 ## 今日の内容
 
@@ -28,7 +50,7 @@
 
 コンピューターは「くりかえし」の天才です! 最近のマシンであれば、1秒間に20億回（2GHz）以上のクロックで、正確に計算をくりかえすことができます。反復は、プログラムの基本的で重要な構造のひとつです。
 
-![CPU](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide03.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="800" height="800" src="/wp-content/uploads/2026/10/03_slide03.png" alt="CPU" class="wp-image-19847" srcset="/wp-content/uploads/2026/10/03_slide03-150x150.png 150w, /wp-content/uploads/2026/10/03_slide03-300x300.png 300w, /wp-content/uploads/2026/10/03_slide03-768x768.png 768w, /wp-content/uploads/2026/10/03_slide03.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 ### 構造化プログラミング
 
@@ -52,7 +74,7 @@
 
 まずはクイズです。正方形の中に、ちょうど半分の幅と高さの正方形を描いてみましょう。
 
-![正方形の中に半分の正方形](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide07.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="480" height="502" src="/wp-content/uploads/2026/10/03_slide07.png" alt="正方形の中に半分の正方形" class="wp-image-19843" srcset="/wp-content/uploads/2026/10/03_slide07-287x300.png 287w, /wp-content/uploads/2026/10/03_slide07.png 480w" sizes="auto, (max-width: 480px) 100vw, 480px" /></figure>
 
 答えは以下のようになります。
 
@@ -66,7 +88,7 @@ function setup() {
 
 クイズ2です。さらに半分の正方形を中に描いてみましょう。
 
-![さらに半分の正方形](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide09.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="480" height="502" src="/wp-content/uploads/2026/10/03_slide09.png" alt="さらに半分の正方形" class="wp-image-19840" srcset="/wp-content/uploads/2026/10/03_slide09-287x300.png 287w, /wp-content/uploads/2026/10/03_slide09.png 480w" sizes="auto, (max-width: 480px) 100vw, 480px" /></figure>
 
 答えは以下のようになります。
 
@@ -85,7 +107,7 @@ function setup() {
 
 変数とは、一時的に値（文字、文字列、数字など）を記憶しておく場所です。データを入れておく「箱」のようなものと考えてください。JavaScriptでは let を用いて変数を作ります。
 
-![変数は値を入れておく箱](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide12.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="328" height="274" src="/wp-content/uploads/2026/10/03_slide12.png" alt="変数は値を入れておく箱" class="wp-image-19839" srcset="/wp-content/uploads/2026/10/03_slide12-300x251.png 300w, /wp-content/uploads/2026/10/03_slide12.png 328w" sizes="auto, (max-width: 328px) 100vw, 328px" /></figure>
 
 変数は以下のように使います。
 
@@ -130,7 +152,7 @@ function setup() {
 
 どんどん小さな正方形を描いていくことができました。
 
-![どんどん小さくなる正方形](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide15.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="480" height="502" src="/wp-content/uploads/2026/10/03_slide15.png" alt="どんどん小さくなる正方形" class="wp-image-19849" srcset="/wp-content/uploads/2026/10/03_slide15-287x300.png 287w, /wp-content/uploads/2026/10/03_slide15.png 480w" sizes="auto, (max-width: 480px) 100vw, 480px" /></figure>
 
 ### 変数の使用例
 
@@ -155,7 +177,7 @@ function setup() {
 }
 ```
 
-![変数を使った同心円](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide18.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1600" height="1244" src="/wp-content/uploads/2026/10/03_slide18.png" alt="変数を使った同心円" class="wp-image-19844" srcset="/wp-content/uploads/2026/10/03_slide18-300x233.png 300w, /wp-content/uploads/2026/10/03_slide18-768x597.png 768w, /wp-content/uploads/2026/10/03_slide18-1024x796.png 1024w, /wp-content/uploads/2026/10/03_slide18-1536x1194.png 1536w, /wp-content/uploads/2026/10/03_slide18.png 1600w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
 
 ## 繰り返し
 
@@ -186,7 +208,7 @@ ellipse(x, y, diameter, diameter);
 
 そこで使用するのが for文です。for文は以下のように書きます。
 
-```
+```javascript
 for (初期化式; 継続条件式; 再初期化式) {
   文;
 }
@@ -214,7 +236,7 @@ function setup() {
 }
 ```
 
-![くりかえしを用いた同心円](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide24.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1600" height="1244" src="/wp-content/uploads/2026/10/03_slide24.png" alt="くりかえしを用いた同心円" class="wp-image-19842" srcset="/wp-content/uploads/2026/10/03_slide24-300x233.png 300w, /wp-content/uploads/2026/10/03_slide24-768x597.png 768w, /wp-content/uploads/2026/10/03_slide24-1024x796.png 1024w, /wp-content/uploads/2026/10/03_slide24-1536x1194.png 1536w, /wp-content/uploads/2026/10/03_slide24.png 1600w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
 
 ### クイズ!! 入れ子状の形
 
@@ -222,7 +244,7 @@ for文を使用したくりかえしを用いた表現に挑戦してみまし�
 
 **第1問 : 入れ子状の矩形**
 
-![入れ子状の矩形](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide26.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="800" height="675" src="/wp-content/uploads/2026/10/03_slide26.png" alt="入れ子状の矩形" class="wp-image-19841" srcset="/wp-content/uploads/2026/10/03_slide26-300x253.png 300w, /wp-content/uploads/2026/10/03_slide26-768x648.png 768w, /wp-content/uploads/2026/10/03_slide26.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 ヒント : 下記のコードから開始してください。
 
@@ -262,7 +284,7 @@ function setup() {
 
 **第2問 : 入れ子状の円**
 
-![入れ子状の円](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide29.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="800" height="675" src="/wp-content/uploads/2026/10/03_slide29.png" alt="入れ子状の円" class="wp-image-19845" srcset="/wp-content/uploads/2026/10/03_slide29-300x253.png 300w, /wp-content/uploads/2026/10/03_slide29-768x648.png 768w, /wp-content/uploads/2026/10/03_slide29.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 ヒント : 下記のコードから開始してください。
 
@@ -320,7 +342,7 @@ function setup() {
 }
 ```
 
-![回転のくりかえし](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide33.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1630" height="1666" src="/wp-content/uploads/2026/10/03_slide33.png" alt="回転のくりかえし" class="wp-image-19848" srcset="/wp-content/uploads/2026/10/03_slide33-294x300.png 294w, /wp-content/uploads/2026/10/03_slide33-768x785.png 768w, /wp-content/uploads/2026/10/03_slide33-1002x1024.png 1002w, /wp-content/uploads/2026/10/03_slide33-1503x1536.png 1503w, /wp-content/uploads/2026/10/03_slide33.png 1630w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
 
 ## 乱数
 
@@ -358,7 +380,7 @@ function setup() {
 }
 ```
 
-![たくさんの円](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide40.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="800" height="675" src="/wp-content/uploads/2026/10/03_slide40.png" alt="たくさんの円" class="wp-image-19846" srcset="/wp-content/uploads/2026/10/03_slide40-300x253.png 300w, /wp-content/uploads/2026/10/03_slide40-768x648.png 768w, /wp-content/uploads/2026/10/03_slide40.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 ### たくさんの矩形を描く
 
@@ -375,7 +397,7 @@ function setup() {
 }
 ```
 
-![たくさんの矩形](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide42.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="800" height="675" src="/wp-content/uploads/2026/10/03_slide42.png" alt="たくさんの矩形" class="wp-image-19850" srcset="/wp-content/uploads/2026/10/03_slide42-300x253.png 300w, /wp-content/uploads/2026/10/03_slide42-768x648.png 768w, /wp-content/uploads/2026/10/03_slide42.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 ### 座標の情報を取り入れる
 
@@ -396,7 +418,7 @@ function setup() {
 }
 ```
 
-![大きさにy座標を適用](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide44.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="800" height="675" src="/wp-content/uploads/2026/10/03_slide44.png" alt="大きさにy座標を適用" class="wp-image-19852" srcset="/wp-content/uploads/2026/10/03_slide44-300x253.png 300w, /wp-content/uploads/2026/10/03_slide44-768x648.png 768w, /wp-content/uploads/2026/10/03_slide44.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 ### 2種類の図形を組み合わせる
 
@@ -425,7 +447,7 @@ function setup() {
 }
 ```
 
-![2種類の図形を組み合わせる](https://raw.githubusercontent.com/tado/sfc-design/main/img/03_slide46.png)
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="800" height="675" src="/wp-content/uploads/2026/10/03_slide46-1.png" alt="2種類の図形を組み合わせる" class="wp-image-19851" srcset="/wp-content/uploads/2026/10/03_slide46-1-300x253.png 300w, /wp-content/uploads/2026/10/03_slide46-1-768x648.png 768w, /wp-content/uploads/2026/10/03_slide46-1.png 800w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 ## 関連リンク
 
@@ -445,8 +467,7 @@ function setup() {
 
 - 完成した作品には、タイトルをつける
 - 完成した作品はOpenProcessingに投稿してURLを提出
-- 必ず TAGS: sfc261016 を入れてください
-- 前回の[提出作品](https://openprocessing.org/browse?q=sfc261009&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
+- 必ず TAGS: [sfc261016](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0#) を入れてください
 - 提出期限 10/22/2026
 
 [課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSfhS3oIn2oNGNT-FwfUjKQLMedSXPpvTeUc80qJsDx341hINg/viewform?usp=publish-editor)

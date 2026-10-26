@@ -1,4 +1,13 @@
-# かたちとコード / 基本図形と色彩による画面構成
+---
+title: "かたちとコード / 基本図形と色彩による画面構成"
+date: "2026-10-05T15:55:25+09:00"
+lastmod: "2026-10-13T11:11:10+09:00"
+url: "/sfc-design26/19728.html"
+categories: ["sfc-design26"]
+summary: "この講義では、p5.jsを使用してコードによるデザインを行います。その最初の一歩として、コードによって「かたち」を描くにはどうすれば良いのか考えていきます。 まず始めに、p5.jsで実際に図形を描いていきます。p5.jsの操作の基本を解説し、簡単な図形を描きながらp5.jsでのプログラミングの基本を学びます。 最後に、1960年代〜70年代の、コンピューター黎明期から発展期におけるコード（プログラ…"
+wp_id: 19728
+shortlink: "https://wp.me/pU1U9-58c"
+---
 
 ![p5.jsで描いた基本図形と色](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide40.svg)
 
@@ -8,9 +17,20 @@
 
 最後に、1960年代〜70年代の、コンピューター黎明期から発展期におけるコード（プログラム）による様々な視覚表現について紹介します。過去の作家がどのようなアイデアで、何を表現しようとしてきたのか、その歴史を辿ります。
 
+## 人気作品ランキング10/09の課題 {#ranking-1009}
+
+10/16 の課題提出フォームの「前回の課題で良いと思った作品」93票を集計（10/23 3:13 までの回答）。3位は2作品、5位は3作品が同票です。
+
+* 1位 [Rekka "horizon" IGUMI: 4ppl3](https://openprocessing.org/@horizon2k38/3035132) : 10票
+* 2位 [hugo: 10/9をそのまんま](https://openprocessing.org/@hug/3031570) : 7票
+* 3位 [krluke: EYEEEEEE](https://openprocessing.org/@krluke0/3035517) : 6票
+* 3位 [motyami: Inspired by Yayoi Kusama](https://openprocessing.org/@nadzunanan/3035711) : 6票
+* 5位 [江口将一郎: Doraemon](https://openprocessing.org/@ShoichiroEguchi/3035114) : 4票
+* 5位 [Noah: Transparent](https://openprocessing.org/@u559735/3035697) : 4票
+* 5位 [Koki: FACE](https://openprocessing.org/@kouki68100/3035645) : 4票
+
 ## スライド資料
 
-<!-- スライド資料へのリンクを追加 -->
 [スライド資料: かたちとコード / 基本図形と色彩による画面構成](https://drive.google.com/file/d/1Q6pCgT5w0O9r3yAqDOSB-H2LLy11o8gW/view?usp=sharing)
 
 ## 今日の内容
@@ -37,16 +57,16 @@
 
 p5.jsを始める一番簡単な方法は、p5.js Web Editorを使う方法です。今日はこれで進めていきます!
 
-- [https://editor.p5js.org/](https://editor.p5js.org/)
+- [https\://editor.p5js.org/](https://editor.p5js.org/)
 
-![p5.js Web Editor](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide04.png)
+![p5.js Web Editor](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide04.png?ssl=1)
 
 操作は簡単です!!
 
 - 実行(Run)ボタン：プログラムの実行
 - 停止(Stop)ボタン：プログラムの停止
 
-![実行ボタンと停止ボタン](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide05.jpg)
+![実行ボタンと停止ボタン](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide05.jpg?ssl=1)
 
 p5.jsを起動した段階で、既にプログラムのテンプレートが入っています!
 
@@ -66,8 +86,8 @@ function draw() {
 
 p5.jsでは、setup()とdraw()という二つのパートに構造化してアニメーションを実現しています。
 
-- **setup() - 初期設定** : プログラムの起動時に一度だけ実行されます。画面の基本設定やフレームレートなどを設定します。
-- **draw() - 描画** : 設定した速さ(フレームレート)でプログラムが終了するまでくりかえし実行されます。
+- **setup() – 初期設定** : プログラムの起動時に一度だけ実行されます。画面の基本設定やフレームレートなどを設定します。
+- **draw() – 描画** : 設定した速さ(フレームレート)でプログラムが終了するまでくりかえし実行されます。
 
 ![setup()とdraw() のイメージ](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide09.svg)
 
@@ -94,7 +114,7 @@ draw (メインループ関数) は、プログラムが終了するまでくり
 
 p5.jsは、ビジュアルプログラミングのための関数の集合です。関数は関数名とその引数（パラメータ）から構成されていて、引数の数は関数によって異なります。
 
-```
+```javascript
 関数名(引数1, 引数2, 引数3...);
 ```
 
@@ -104,7 +124,7 @@ p5.jsは、ビジュアルプログラミングのための関数の集合です
 
 コンピュータの画面はどうなっているのでしょうか? コンピュータの画面を拡大していくと、縦横に並んだ点の集合であることがわかります。この点をピクセル (Pixel) と呼びます。一つのピクセルは赤、緑、青の三原色から成り立っています。
 
-![コンピュータの画面を拡大したところ](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide14.png)
+![コンピュータの画面を拡大したところ](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide14.png?ssl=1)
 
 コンピュータ画面は、縦横沢山のピクセルから構成された巨大なエクセルの表のようなものです。例えば 1024 x 768 の液晶画面は、横に1024列、縦に768行ならんだ巨大な表で、それぞれのセルにR,G,B,A(アルファ値)が格納されています。
 
@@ -132,7 +152,7 @@ p5.js (Processing) の座標系は以下のようになっています。
 
 まず、形を描いていく画面 (キャンバス) を用意します。createCanvas関数でキャンバスの大きさを指定します。
 
-```
+```javascript
 createCanvas(<幅>, <高さ>);
 ```
 
@@ -159,7 +179,7 @@ createCanvas(320, 240);
 
 point関数で点を描きます。
 
-```
+```javascript
 point(<X座標>, <Y座標>);
 ```
 
@@ -175,7 +195,7 @@ point(100, 120);
 
 line関数で直線を描きます。
 
-```
+```javascript
 line(<X座標始点>, <Y座標始点>, <X座標終点>, <Y座標終点>);
 ```
 
@@ -191,7 +211,7 @@ line(10, 10, 200, 180);
 
 rect関数で長方形を描きます。
 
-```
+```javascript
 rect(<X座標>, <Y座標>, <長方形の幅>, <長方形の高さ>);
 ```
 
@@ -207,7 +227,7 @@ rect(10, 10, 200, 180);
 
 ellipse関数で円、楕円を描きます。
 
-```
+```javascript
 ellipse(<X座標>, <Y座標>, <楕円の幅>, <楕円の高さ>);
 ```
 
@@ -253,19 +273,19 @@ function draw() {
 
 背景色 : background関数
 
-```
+```javascript
 background(<Rの値>, <Gの値>, <Bの値>);
 ```
 
 線に色をつける : stroke関数
 
-```
+```javascript
 stroke(<Rの値>, <Gの値>, <Bの値>);
 ```
 
 塗りの色をつける : fill関数
 
-```
+```javascript
 fill(<Rの値>, <Gの値>, <Bの値>);
 ```
 
@@ -313,19 +333,19 @@ R, G, Bの3つの値に続けて、もう1つ値を指定すると、透明度�
 
 背景色
 
-```
+```javascript
 background(<Rの値>, <Gの値>, <Bの値>, <透明度>);
 ```
 
 線
 
-```
+```javascript
 stroke(<Rの値>, <Gの値>, <Bの値>, <透明度>);
 ```
 
 塗り
 
-```
+```javascript
 fill(<Rの値>, <Gの値>, <Bの値>, <透明度>);
 ```
 
@@ -380,7 +400,7 @@ function draw() {
 
 [OpenProcessing](https://www.openprocessing.org/) は、p5.jsのコードをシェアできるサービスです。無料で利用可能です (有料オプションもあり)。早速登録してみましょう! トップページの「Join」ボタンから登録できます。
 
-![OpenProcessing](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide42.png)
+![OpenProcessing](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide42.png?ssl=1)
 
 作成したコードをシェアする手順は動画で紹介します! とっても簡単です!!
 
@@ -401,10 +421,12 @@ function draw() {
 
 - 完成したら何かタイトルをつける
 - 完成した作品はOpenProcessingに投稿してURLを提出
+- 必ず TAGS: [sfc261009](https://openprocessing.org/browse?q=sfc261009&time=anytime&type=tags&offset=0) を入れてください
+- 提出期限 10/15/2026
 
-<!-- 投稿時のタグ、提出締切、提出フォームのURLを追加 -->
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdTW0NuIxWvbTX1chMHnYRVLX-XKPPYIWVKpsNldW4ftT8R4A/viewform?usp=dialog)
 
-## 過去へタイムスリップ - 1960〜70年代のコンピュータ・アート
+## 過去へタイムスリップ – 1960〜70年代のコンピュータ・アート
 
 まずは当時のプログラミング環境について確認しておきましょう。コンピュータを使える場所は大学や研究所が中心で、限られた一部のエンジニア、プログラマーのみが触れることができました。そのような時代のコンピュータ・アートは、どのようなものだったのでしょうか?
 
@@ -412,136 +434,136 @@ function draw() {
 
 最初期のコンピュータゲーム “Spacewar!” (1962) です。
 
-- 動画: [https://youtu.be/1EWQYAfuMYw?t=893](https://youtu.be/1EWQYAfuMYw?t=893)
+- 動画: [https\://youtu.be/1EWQYAfuMYw?t=893](https://youtu.be/1EWQYAfuMYw?t=893)
 
-![Spacewar!](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide51.jpg)
+![Spacewar!](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide51.jpg?ssl=1)
 
 ブラウザで実際にプレイすることも可能です!
 
-- [https://www.masswerk.at/spacewar/](https://www.masswerk.at/spacewar/)
+- [https\://www\.masswerk.at/spacewar/](https://www.masswerk.at/spacewar/)
 
-![Spacewar! のエミュレーター](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide52.png)
+![Spacewar! のエミュレーター](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide52.png?ssl=1)
 
 ### Herbert Franke
 
-![Herbert Franke](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide53.png)
+![Herbert Franke](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide53.png?ssl=1)
 
 Herbert Franke は1927年、ウィーン生まれ。1950年代から、アナログコンピュータとオシロスコープによる作品を制作した、コンピュータアートのパイオニアです。
 
 **Electronic Graphics, 1961-62** : アナログコンピュータとオシロスコープによる作品
 
-![Herbert Franke, Electronic Graphics](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide54.jpg)
+![Herbert Franke, Electronic Graphics](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide54.jpg?ssl=1)
 
-![Herbert Franke, Electronic Graphics](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide55.png)
+![Herbert Franke, Electronic Graphics](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide55.png?ssl=1)
 
-![Herbert Franke, Electronic Graphics](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide56.png)
+![Herbert Franke, Electronic Graphics](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide56.png?ssl=1)
 
 Herbert Franke のアナログ装置
 
-![Herbert Franke のアナログ装置](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide57.png)
+![Herbert Franke のアナログ装置](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide57.png?ssl=1)
 
 ### Georg Nees
 
-![Georg Nees](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide58.png)
+![Georg Nees](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide58.png?ssl=1)
 
 Georg Nees は1926年、ニュルンベルク生まれ。1951年からシーメンス社に在籍し、デジタルコンピュータをプログラミングして図形生成を行ったパイオニアです。
 
 **Georg Nees, 1965-1968.**
 
-![Georg Nees の作品](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide59.png)
+![Georg Nees の作品](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide59.png?ssl=1)
 
 **Schotter, 1968.** : 作品とそのプログラム
 
-![Georg Nees, Schotter](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide60a.jpg)
+![Georg Nees, Schotter](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide60a.jpg?ssl=1)
 
-![Georg Nees, Schotter のプログラム](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide60b.png)
+![Georg Nees, Schotter のプログラム](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide60b.png?ssl=1)
 
-**'Plastik 1', 1965-8** : アルミレリーフ。工作機械をプログラムで制御して制作しています。
+**‘Plastik 1’, 1965-8** : アルミレリーフ。工作機械をプログラムで制御して制作しています。
 
-![Georg Nees, Plastik 1](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide61.png)
+![Georg Nees, Plastik 1](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide61.png?ssl=1)
 
 Georg Nees が使用していたプロッタ ZUSE Z64
 
-![ZUSE Z64](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide62.jpg)
+![ZUSE Z64](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide62.jpg?ssl=1)
 
 Georg Nees が使用していた頃のコンピュータ Siemens 2002
 
-![Siemens 2002](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide63.png)
+![Siemens 2002](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide63.png?ssl=1)
 
 ### A. Michael Noll
 
-![A. Michael Noll](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide64.png)
+![A. Michael Noll](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide64.png?ssl=1)
 
 A. Michael Noll は1939年生まれ。1961年から15年間、AT&Tベル研究所で基礎研究にとりくみました。
 
 **“Vertical-Horizontal No. 3”, 1964 / “Gaussian Quadratic”, 1963**
 
-![A. Michael Noll, Vertical-Horizontal No. 3](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide65a.png)
+![A. Michael Noll, Vertical-Horizontal No. 3](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide65a.png?ssl=1)
 
-![A. Michael Noll, Gaussian Quadratic](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide65b.png)
+![A. Michael Noll, Gaussian Quadratic](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide65b.png?ssl=1)
 
 **“Ninety Parallel Sinusoids With Linearly Increasing Period”, 1964**
 
-![A. Michael Noll, Ninety Parallel Sinusoids With Linearly Increasing Period](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide66.png)
+![A. Michael Noll, Ninety Parallel Sinusoids With Linearly Increasing Period](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide66.png?ssl=1)
 
 **“Four computer-generated random patterns”, 1965**
 
-![A. Michael Noll, Four computer-generated random patterns](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide67.png)
+![A. Michael Noll, Four computer-generated random patterns](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide67.png?ssl=1)
 
 この作品は、モンドリアンの「線によるコンポジション (1917)」をベースにしています。
 
-![モンドリアン「線によるコンポジション」](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide68.png)
+![モンドリアン「線によるコンポジション」](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide68.png?ssl=1)
 
 ### Frieder Nake
 
-![Frieder Nake](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide69.png)
+![Frieder Nake](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide69.png?ssl=1)
 
 Frieder Nake は1938年、ドイツ、シュトゥットガルト生まれ。
 
 **13/9/65 Nr. 2, 1965**
 
-![Frieder Nake, 13/9/65 Nr. 2](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide70.jpg)
+![Frieder Nake, 13/9/65 Nr. 2](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide70.jpg?ssl=1)
 
 **Frieder Nake, 1965**
 
-![Frieder Nake, 1965](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide71.png)
+![Frieder Nake, 1965](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide71.png?ssl=1)
 
 ### Manfred Mohr
 
-![Manfred Mohr](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide72.png)
+![Manfred Mohr](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide72.png?ssl=1)
 
 Manfred Mohr は1938年ドイツ生まれ。1963年からパリ、1981年からニューヨークに在住して制作しています。
 
-**"a formal language", 1970**
+**“a formal language”, 1970**
 
-![Manfred Mohr, a formal language](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide73.jpg)
+![Manfred Mohr, a formal language](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide73.jpg?ssl=1)
 
 **“Cubic Limit”, 1972-77**
 
-![Manfred Mohr, Cubic Limit](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide74.png)
+![Manfred Mohr, Cubic Limit](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide74.png?ssl=1)
 
 ### Computer Technique Group (CTG)
 
-![Computer Technique Group](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide75.png)
+![Computer Technique Group](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide75.png?ssl=1)
 
 Computer Technique Group (CTG) は、槌屋治紀と幸村真佐男の出会いをきっかけに、1966年12月に山中邦夫と柿崎純一郎を加えた４人（最終的に10名）で結成されたコンピュータ・アート集団です。
 
 **Running Cola is Africa, 1969**
 
-![Computer Technique Group, Running Cola is Africa](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide76.jpg)
+![Computer Technique Group, Running Cola is Africa](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide76.jpg?ssl=1)
 
 **Shot Kennedy, 1967**
 
-![Computer Technique Group, Shot Kennedy](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide77.png)
+![Computer Technique Group, Shot Kennedy](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide77.png?ssl=1)
 
 ### 現代のコードによる表現
 
 現代でも、コードによる美学の探求は進められています。例えば [Casey Reas](http://reas.com/) の Process Compendium 2004-2010 です。
 
-- [https://vimeo.com/22955812](https://vimeo.com/22955812)
+- [https\://vimeo.com/22955812](https://vimeo.com/22955812)
 
-![Casey Reas, Process Compendium](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide78a.png)
+![Casey Reas, Process Compendium](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide78a.png?ssl=1)
 
-![Casey Reas, Process Compendium](https://raw.githubusercontent.com/tado/sfc-design/main/img/02_slide78b.png)
+![Casey Reas, Process Compendium](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/02_slide78b.png?ssl=1)
 
 現在では、PCさえあれば誰でもコードによる表現ができる時代です。先人たちの作品も参考にしながら、コードによる「かたち」の表現を探求していきましょう!

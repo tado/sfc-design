@@ -1,4 +1,16 @@
-![100個の円が同時に動く](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide35.png)
+---
+title: "動きを生みだす – アニメーションとベクトル"
+date: "2026-10-17T10:30:07+09:00"
+lastmod: "2026-10-18T10:23:29+09:00"
+url: "/sfc-design26/19885.html"
+categories: ["sfc-design26"]
+summary: "今回は、p5.jsで「動き」を生みだす方法について学びます。 まず始めに、アニメーションの基本となる setup() と draw() による構造化について解説します。draw() がくりかえし実行される仕組みを使って、図形の場所や色を少しずつ変化させることで、アニメーションをつくります。 次に、前回学んだ変数に加えて「条件分岐 (if文)」を使い、画面の端でバウンドする動きを実現します。さらに、…"
+image: "/wp-content/uploads/2026/10/04_slide35.png"
+wp_id: 19885
+shortlink: "https://wp.me/pU1U9-5aJ"
+---
+
+![100個の円が同時に動く](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide35.png?ssl=1)
 
 今回は、p5.jsで「動き」を生みだす方法について学びます。
 
@@ -8,10 +20,31 @@
 
 最後に、「配列」とfor文を組み合わせて、たくさんの図形を同時に動かしてみましょう。
 
+## 本日の課題
+
+テーマ: 「アニメーションで表現する」
+
+今回学んだアニメーション (setupとdraw) のしくみを使って、「動き」で何かを表現してみましょう! 同じ円でも、速さや方向、跳ね返り方、色の変化によって、まったく違った印象になります。本日のコードをもとに改造しても、ゼロから作ってもOKです。次回の授業の冒頭で簡単に作品をいくつか紹介します。
+
+例えば、以下のような表現が考えられます。
+
+- 自然現象や風景を表現する (雨、雪、泡、蛍、星空など)
+- 第2回の作品 (基本図形と色による画面構成) に動きを加える
+- 群れや集団を表現する (魚の群れ、花火、人混みなど)
+
+提出方法は以下の通りです。
+
+- 完成した作品には、タイトルをつける
+- 完成した作品はOpenProcessingに投稿してURLを提出
+- 必ず TAGS: [sfc261023](https://openprocessing.org/browse?q=sfc261023&time=anytime&type=tags&offset=0) を入れてください
+- 前回の[提出作品](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
+- 提出期限 10/29/2026
+
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSeXX3Senkm_D5kG7B6liuZtPiXVZz1V6m6Ep6wxz-97y60_lQ/viewform?usp=publish-editor)
+
 ## スライド資料
 
-<!-- スライド資料へのリンクを追加 -->
-[スライド資料: 動きを生みだす - アニメーションとベクトル](https://drive.google.com/file/d/1dzzylM0h0ux41gro-liLYczIucHaNk6a/view?usp=sharing)
+[スライド資料: 動きを生みだす – アニメーションとベクトル](https://drive.google.com/file/d/1dzzylM0h0ux41gro-liLYczIucHaNk6a/view?usp=sharing)
 
 ## 今日の内容
 
@@ -35,8 +68,8 @@ p5.jsでアニメーションを実現するには、これまでのプログラ
 
 p5.jsでは、プログラムを setup() と draw() という二つのパートに構造化してアニメーションを実現します。
 
-- setup() - 初期設定 : プログラムの起動時に一度だけ実行されます。画面の基本設定やフレームレートなどを設定します。
-- draw() - 描画 : 設定した速さ (フレームレート) で、プログラムが終了するまでくりかえし実行されます。
+- setup() – 初期設定 : プログラムの起動時に一度だけ実行されます。画面の基本設定やフレームレートなどを設定します。
+- draw() – 描画 : 設定した速さ (フレームレート) で、プログラムが終了するまでくりかえし実行されます。
 
 ![setup()とdraw()のイメージ](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide04.svg)
 
@@ -81,7 +114,7 @@ function draw() {
 
 background() を setup() の中で1回だけ実行しているため、draw() で描いた円は消されずに残り、どんどん増殖していきます。
 
-![増殖する円](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide10.jpg)
+![増殖する円](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide10.jpg?ssl=1)
 
 ## アニメーション入門
 
@@ -124,7 +157,7 @@ function draw() {
 
 今度は draw() の最初で毎回 background() を描画しているので、前のフレームの円は消え、円が等速度で移動するように見えます。
 
-![円が等速度で移動する](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide13.jpg)
+![円が等速度で移動する](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide13.jpg?ssl=1)
 
 アニメーションで変化させるパラメータは、座標だけではありません。色をアニメーションすることも可能です。例えば、fill() の値を変化させれば、色が徐々に変化していきます。
 
@@ -147,7 +180,7 @@ function draw() {
 
 「もし○○したら、××せよ」という処理を書くには、条件分岐 (if文) を使います。条件分岐の構文は以下のようになります。
 
-```
+```javascript
 if ([条件式]) {
   [条件が正しい場合の処理]
 } else {
@@ -194,7 +227,7 @@ function draw() {
 
 画面の端でバウンドする動きになりました!
 
-![画面の端でバウンドする](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide13.jpg)
+![画面の端でバウンドする](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide13.jpg?ssl=1)
 
 ## ベクトル (向きと大きさ) で動きを再定義
 
@@ -209,11 +242,11 @@ function draw() {
 
 ベクトル (vector) とは、幾何学的空間における、大きさと向きを持った量です。例えば、速度、加速度、力などがベクトルで表されます。平面上や空間内の矢印としてイメージしてください。
 
-![ベクトルのイメージ](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide25.png)
+![ベクトルのイメージ](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide25.png?ssl=1)
 
 例えば、原点 (0, 0) から (2, 3) の座標までのベクトルは以下のようになります。
 
-![原点(0,0)から(2,3)までのベクトル](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide26.png)
+![原点(0,0)から(2,3)までのベクトル](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide26.png?ssl=1)
 
 ### p5.Vector
 
@@ -260,7 +293,7 @@ function draw() {
 let data = [];
 ```
 
-![配列のイメージ](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide31.png)
+![配列のイメージ](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide31.png?ssl=1)
 
 ### 配列で位置と速度を管理する
 
@@ -300,7 +333,7 @@ function draw() {
 
 100個の円が、同時に動きます!
 
-![100個の円が同時に動く](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide35.png)
+![100個の円が同時に動く](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide35.png?ssl=1)
 
 ## 色や大きさを変化させる
 
@@ -352,7 +385,7 @@ function draw() {
 
 色や大きさの異なる円が、同時に動きます!
 
-![色や大きさを変化させる](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_slide41.png)
+![色や大きさを変化させる](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_slide41.png?ssl=1)
 
 ## 関連リンク
 
@@ -384,18 +417,17 @@ function draw() {
 
 - 完成した作品には、タイトルをつける
 - 完成した作品はOpenProcessingに投稿してURLを提出
-- 必ず TAGS: sfc261023 を入れてください
+- 必ず TAGS: [sfc261023](https://openprocessing.org/browse?q=sfc261023&time=anytime&type=tags&offset=0) を入れてください
 - 前回の[提出作品](https://openprocessing.org/browse?q=sfc261016&time=anytime&type=tags&offset=0)で良いと思った作品を1つ選んでください
 - 提出期限 10/29/2026
 
-<!-- 提出フォームのURLを追加 -->
 [課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSeXX3Senkm_D5kG7B6liuZtPiXVZz1V6m6Ep6wxz-97y60_lQ/viewform?usp=publish-editor)
 
 **作品例 : 蛍の光**
 
 蛍の光を「動き」で表現した作品例です。位置・速度・大きさ・色を配列で管理するところは「色や大きさを変化させる」のコードと同じですが、蛍がふわふわと漂う動きと、1匹ずつ違うタイミングでゆっくり明滅する光を加えています。授業で扱っていない関数 (sin()、cos()、limit() など) も使っているので、気になったらリファレンスで調べてみましょう。
 
-- [OpenProcessingで見る](https://openprocessing.org/@tadokoro/3037623)
+- 作品例: [蛍の光](https://openprocessing.org/@tadokoro/3037623)
 - 参考作品 : [蛍のよりみち。](https://openprocessing.org/@tadokoro/3037612)
 
 ```javascript
@@ -460,4 +492,4 @@ function draw() {
 }
 ```
 
-![蛍の光](https://raw.githubusercontent.com/tado/sfc-design/main/img/04_hotaru.png)
+![蛍の光](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/04_hotaru.png?ssl=1)
