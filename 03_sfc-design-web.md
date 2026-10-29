@@ -24,6 +24,17 @@ shortlink: "https://wp.me/pU1U9-59U"
 
 [スライド資料: 反復と乱数](https://drive.google.com/file/d/1nx4HaOdf8v9eXiyDS3Ua4484sXVboRby/view?usp=sharing)
 
+## 人気作品ランキング10/16の課題 {#ranking-1016}
+
+10/23 の課題提出フォームの「前回の課題で良いと思った作品」97票を集計（10/30 2:49 までの回答）。2位は5作品が同票です。
+
+* 1位 [Tran Minh: ブラックホール](https://openprocessing.org/@Vatine06/3038260) : 6票
+* 2位 [Leo Ueda: Excited Cells](https://openprocessing.org/@leonyarudo/3039162) : 4票
+* 2位 [Chika: ミャクミャク](https://openprocessing.org/@salmon/3036493) : 4票
+* 2位 [Hajime: トルコランプ](https://openprocessing.org/@Arietty/3038310) : 4票
+* 2位 [taiseinakashika: HOPE](https://openprocessing.org/@nakashika/3037692) : 4票
+* 2位 [Mone Koido: Melting Time](https://openprocessing.org/@Mone/3041805) : 4票
+
 ## 本日の課題
 
 テーマ: 「乱数 (random) と繰り返し (for) を使用した表現」
