@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 360" width="1480" height="360" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker><marker id="g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+  <g text-anchor="middle" font-size="48">
+    <text x="162" y="158" fill="#2277cc" font-weight="bold">引数</text>
+    <text x="162" y="222" fill="#444">arguments</text>
+    <line x1="317" y1="177" x2="500" y2="177" stroke="#444" stroke-width="6" marker-end="url(#a)"/>
+    <rect x="515" y="23" width="461" height="309" rx="12" fill="#2277cc"/>
+    <text x="745" y="168" fill="#fff" font-weight="bold">関数</text>
+    <text x="745" y="232" fill="#fff">function</text>
+    <line x1="976" y1="177" x2="1159" y2="177" stroke="#444" stroke-width="6" marker-end="url(#g)"/>
+    <text x="1312" y="158" fill="#2277cc" font-weight="bold">戻り値</text>
+    <text x="1312" y="222" fill="#444">return value</text>
+  </g>
+</svg>

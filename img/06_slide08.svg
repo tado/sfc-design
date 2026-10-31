@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 680" width="1560" height="680" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs><marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e03030"/></marker></defs>
+  <text x="26" y="62" font-size="38" fill="#2277cc" font-weight="bold">p5.js library</text>
+  <text x="915" y="62" font-size="38" fill="#2277cc" font-weight="bold">p5.jsを使用したプログラム</text>
+  <g>
+    <rect x="26" y="92" width="584" height="431" rx="8" fill="#fff" stroke="#444" stroke-width="6"/>
+    <text x="50" y="150" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">....</text>
+    <text x="50" y="200" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">....</text>
+    <text x="50" y="250" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">setup();</text>
+    <text x="50" y="300" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">...</text>
+    <text x="50" y="350" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">...</text>
+    <text x="50" y="400" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">....</text>
+    <text x="50" y="450" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">...</text>
+    <rect x="915" y="92" width="612" height="431" rx="8" fill="#fff" stroke="#444" stroke-width="6"/>
+    <text x="939" y="150" font-family="Menlo, monospace" font-size="32" fill="#e03030" xml:space="preserve">function setup(){</text>
+    <text x="939" y="200" font-family="Menlo, monospace" font-size="32" fill="#e03030" xml:space="preserve">  setupの処理を定義</text>
+    <text x="939" y="250" font-family="Menlo, monospace" font-size="32" fill="#e03030" xml:space="preserve">}</text>
+    <text x="939" y="300" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">function draw(){</text>
+    <text x="939" y="350" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">  ...</text>
+    <text x="939" y="400" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">  circle(400, 300, 100);</text>
+    <text x="939" y="450" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">  ...</text>
+    <text x="939" y="500" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">}</text>
+  </g>
+  <text x="915" y="580" font-size="34" fill="#444">ライブラリからsetup()が</text><text x="915" y="624" font-size="34" fill="#444">呼び出された際の処理を定義</text>
+  <line x1="910" y1="140" x2="245" y2="237" stroke="#e03030" stroke-width="6" marker-end="url(#r)"/>
+  <text x="720" y="270" font-size="34" fill="#e03030" font-weight="bold" text-anchor="middle">定義を参照</text>
+</svg>
