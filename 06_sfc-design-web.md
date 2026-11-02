@@ -4,10 +4,10 @@ date: 2026-11-01T07:27:24+09:00
 url: "/sfc-design26/06_sfc-design-web.html"
 categories: ["sfc-design26"]
 summary: "今回は、プログラムの中でまとまった処理をひとつの手続きとして定義する「関数 (function)」について学びます。 まず始めに、関数とは何か、引数と戻り値のしくみを解説します。実は、これまで使ってきた circle() や setup() も関数でした。 次に、ひとつのプログラムをいくつかの関数に分けて整理する「モジュール化」に挑戦します。処理の内容がわかる名前をつけて関数に…"
-image: "https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/06_slide35.jpg"
+image: "https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/06_slide38.jpg"
 ---
 
-![たくさんの同心円 (guruguru) を描く](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/06_slide35.jpg?ssl=1)
+![たくさんの花を描く](https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/06_slide38.jpg?ssl=1)
 
 今回は、プログラムの中でまとまった処理をひとつの手続きとして定義する「関数 (function)」について学びます。
 
@@ -116,7 +116,7 @@ p5.js のライブラリには、rect() や ellipse()、circle() など沢山の
 
 このプログラムは、いくつかの手続から構成されています。
 
-- 初期化 : 位置、大きさ、動く速さ、半径を設定
+- 初期化 : 位置、大きさ (直径)、動く速さを設定
 - 円の位置の移動 : ランダムな方向へ動く
 - 画面の端に来た際の処理 : 画面の端に来たら反対側から出現
 - 円を描く
@@ -149,7 +149,7 @@ function display() {
 let ball = {
   x: 0,
   y: 0,
-  radius: 5,
+  diameter: 5,
   speed: 1
 };
 
@@ -172,7 +172,7 @@ function draw() {
 function init() {
   ball.x = random(width);
   ball.y = random(height);
-  ball.radius = 10;
+  ball.diameter = 10;
   ball.speed = 800;
   background(0);
 }
@@ -203,7 +203,7 @@ function throughWall() {
 function display() {
   noStroke();
   fill(31, 127, 255);
-  circle(ball.x, ball.y, ball.radius);
+  circle(ball.x, ball.y, ball.diameter);
 }
 ```
 
@@ -222,8 +222,8 @@ draw() の中身が、move()、throughWall()、display() という3つの関数�
 同心円を描く関数 guruguru() を作ってみます! 想定されるパラメータは以下の4つです。
 
 - 中心位置 (circleLocation) ※p5.Vector
-- 大きさ (radius)
 - 同心円の数 (numCircles)
+- 大きさ・直径 (diameter)
 - 色 (circleColor)
 
 まずは関数を使わずに、そのまま作成してみます。
@@ -239,16 +239,18 @@ function draw() {
   background(0);
   let circleLocation = createVector(width / 2, height / 2);
   let numCircles = 20;
-  let radius = 400;
+  let diameter = 400;
   let circleColor = color(255, 127, 31);
   noFill();
   stroke(circleColor);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
+
+circle() の3つめの引数は、円の半径ではなく直径なので、変数名も diameter (直径) としています。map() で、i の値 (0 〜 numCircles - 1) を、円の直径 (10 〜 diameter) に変換しています。i の最大値は numCircles - 1 なので、map() の範囲も numCircles - 1 とすることで、いちばん外側の円の直径がちょうど diameter になります。
 
 同心円が描けました!
 
@@ -262,13 +264,13 @@ function draw() {
 function guruguru() {
   let circleLocation = createVector(width / 2, height / 2);
   let numCircles = 20;
-  let radius = 400;
+  let diameter = 400;
   let circleColor = color(255, 127, 31);
   noFill();
   stroke(circleColor);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
@@ -288,15 +290,15 @@ function draw() {
 
 ### Step 2 : 引数ありの guruguru()
 
-次に、中心位置、大きさ、同心円の数、色を引数として渡せるようにしてみます。関数の中で決めていた値を、引数として受け取るように書き換えます。
+次に、中心位置、同心円の数、大きさ、色を引数として渡せるようにしてみます。関数の中で決めていた値を、引数として受け取るように書き換えます。
 
 ```javascript
-function guruguru(circleLocation, numCircles, radius, circleColor) {
+function guruguru(circleLocation, numCircles, diameter, circleColor) {
   noFill();
   stroke(circleColor);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
@@ -333,7 +335,7 @@ function draw() {
 
 ### guruguru を大量生成
 
-draw() の中でくりかえし guruguru() 関数を呼び出して、大量に guruguru を生成してみましょう。位置、同心円の数、大きさ、色をランダムに決めて、引数として渡しています。
+draw() の中でくりかえし guruguru() 関数を呼び出して、大量に guruguru を生成してみましょう。位置、同心円の数、大きさ、色をランダムに決めて、引数として渡しています。同心円の数は、int() で整数にしています。また、guruguru() の中の map() で numCircles - 1 を使っているので、同心円の数が2以上になるように int(random(2, 11)) としています。
 
 - [guruguruを大量生成](https://openprocessing.org/sketch/2110205)
 
@@ -350,15 +352,15 @@ function draw() {
   let s = 80;
   let b = 100;
   let a = 80;
-  guruguru(createVector(x, y), random(10), random(width / 20), color(h, s, b, a));
+  guruguru(createVector(x, y), int(random(2, 11)), random(width / 20), color(h, s, b, a));
 }
-function guruguru(circleLocation, numCircles, radius, circleColor) {
+function guruguru(circleLocation, numCircles, diameter, circleColor) {
   noFill();
   stroke(circleColor);
   strokeWeight(2.0);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
@@ -380,10 +382,10 @@ function setup() {
 function draw() {
   let center = createVector(random(width), random(height));
   let numPetal = int(random(4, 18));
-  let radius = random(width / 120, width / 80);
-  flower(center, numPetal, radius);
+  let petalSize = random(width / 120, width / 80);
+  flower(center, numPetal, petalSize);
 }
-function flower(center, numPetal, radius) {
+function flower(center, numPetal, petalSize) {
   stroke(0, 0, 50, 70);
   fill(random(360), 20, 100, 90);
   push();
@@ -391,11 +393,11 @@ function flower(center, numPetal, radius) {
   for (let i = 0; i < numPetal; i++) {
     push();
     rotate(2 * PI / numPetal * i);
-    circle(radius, 0, radius);
+    circle(petalSize, 0, petalSize);
     pop();
   }
   fill(60, 100, 100);
-  circle(0, 0, radius * 1.2);
+  circle(0, 0, petalSize * 1.2);
   pop();
 }
 ```

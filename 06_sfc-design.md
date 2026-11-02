@@ -119,7 +119,7 @@ function setup() {
 
 - このプログラムはいくつかの手続から構成されている
 - 初期化
-  - 位置、大きさ、動く速さ、半径を設定
+  - 位置、大きさ (直径)、動く速さを設定
 - 円の位置の移動
   - ランダムな方向へ動く
 - 画面の端に来た際の処理
@@ -167,7 +167,7 @@ function display() {
 function init() {
   ball.x = random(width);
   ball.y = random(height);
-  ball.radius = 10;
+  ball.diameter = 10;
   ball.speed = 800;
   background(0);
 }
@@ -210,7 +210,7 @@ function throughWall() {
 function display() {
   noStroke();
   fill(31, 127, 255);
-  circle(ball.x, ball.y, ball.radius);
+  circle(ball.x, ball.y, ball.diameter);
 }
 ```
 
@@ -278,8 +278,8 @@ function draw() {
 - 同心円を描く関数 guruguru() を作ってみる!
 - 想定されるパラメータ
   - 中心位置 (circleLocation) ※p5.Vector
-  - 大きさ (radius)
   - 同心円の数 (numCircles)
+  - 大きさ・直径 (diameter)
   - 色 (circleColor)
 - まずは関数を使わずに、そのまま作成してみる
 
@@ -298,13 +298,13 @@ function draw() {
   background(0);
   let circleLocation = createVector(width / 2, height / 2);
   let numCircles = 20;
-  let radius = 400;
+  let diameter = 400;
   let circleColor = color(255, 127, 31);
   noFill();
   stroke(circleColor);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
@@ -316,6 +316,16 @@ function draw() {
 - 同心円が描けた!
 
 ![height:420](https://raw.githubusercontent.com/tado/sfc-design/main/img/06_slide22.jpg)
+
+---
+
+## 引数による関数のバリエーション
+
+- circle() の3つめの引数は、半径ではなく直径
+  - 変数名も diameter (直径) にしている
+- map() で、i の値 (0 〜 numCircles - 1) を直径 (10 〜 diameter) に変換
+  - i の最大値は numCircles - 1
+  - map() の範囲も numCircles - 1 にすると、いちばん外側の円の直径がちょうど diameter になる
 
 ---
 
@@ -334,13 +344,13 @@ function draw() {
 function guruguru() {
   let circleLocation = createVector(width / 2, height / 2);
   let numCircles = 20;
-  let radius = 400;
+  let diameter = 400;
   let circleColor = color(255, 127, 31);
   noFill();
   stroke(circleColor);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
@@ -376,8 +386,8 @@ function draw() {
 - Step 2 - 1
 - 引数を渡せるようにしてみる
   - 中心位置 (circleLocation) ※p5.Vector
-  - 大きさ (radius)
   - 同心円の数 (numCircles)
+  - 大きさ・直径 (diameter)
   - 色 (circleColor)
 
 ---
@@ -387,12 +397,12 @@ function draw() {
 - guruguru() 関数 (引数あり)
 
 ```javascript
-function guruguru(circleLocation, numCircles, radius, circleColor) {
+function guruguru(circleLocation, numCircles, diameter, circleColor) {
   noFill();
   stroke(circleColor);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
@@ -472,7 +482,7 @@ function draw() {
   let s = 80;
   let b = 100;
   let a = 80;
-  guruguru(createVector(x, y), random(10), random(width / 20), color(h, s, b, a));
+  guruguru(createVector(x, y), int(random(2, 11)), random(width / 20), color(h, s, b, a));
 }
 ```
 
@@ -483,13 +493,13 @@ function draw() {
 - guruguruを大量生成! (guruguru() 関数)
 
 ```javascript
-function guruguru(circleLocation, numCircles, radius, circleColor) {
+function guruguru(circleLocation, numCircles, diameter, circleColor) {
   noFill();
   stroke(circleColor);
   strokeWeight(2.0);
   for (let i = 0; i < numCircles; i++) {
-    let currentRadius = map(i, 0, numCircles, 10, radius);
-    circle(circleLocation.x, circleLocation.y, currentRadius);
+    let currentDiameter = map(i, 0, numCircles - 1, 10, diameter);
+    circle(circleLocation.x, circleLocation.y, currentDiameter);
   }
 }
 ```
@@ -525,8 +535,8 @@ function setup() {
 function draw() {
   let center = createVector(random(width), random(height));
   let numPetal = int(random(4, 18));
-  let radius = random(width / 120, width / 80);
-  flower(center, numPetal, radius);
+  let petalSize = random(width / 120, width / 80);
+  flower(center, numPetal, petalSize);
 }
 ```
 
@@ -537,7 +547,7 @@ function draw() {
 - たくさんの花を描いてみる – 解答例 (flower() 関数)
 
 ```javascript
-function flower(center, numPetal, radius) {
+function flower(center, numPetal, petalSize) {
   stroke(0, 0, 50, 70);
   fill(random(360), 20, 100, 90);
   push();
@@ -545,11 +555,11 @@ function flower(center, numPetal, radius) {
   for (let i = 0; i < numPetal; i++) {
     push();
     rotate(2 * PI / numPetal * i);
-    circle(radius, 0, radius);
+    circle(petalSize, 0, petalSize);
     pop();
   }
   fill(60, 100, 100);
-  circle(0, 0, radius * 1.2);
+  circle(0, 0, petalSize * 1.2);
   pop();
 }
 ```
