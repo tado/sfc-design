@@ -22,6 +22,6 @@
     <text x="939" y="500" font-family="Menlo, monospace" font-size="32" fill="#222" xml:space="preserve">}</text>
   </g>
   <text x="915" y="580" font-size="34" fill="#444">ライブラリからsetup()が</text><text x="915" y="624" font-size="34" fill="#444">呼び出された際の処理を定義</text>
-  <line x1="910" y1="140" x2="245" y2="237" stroke="#e03030" stroke-width="6" marker-end="url(#r)"/>
+  <line x1="245" y1="237" x2="910" y2="140" stroke="#e03030" stroke-width="6" marker-end="url(#r)"/>
   <text x="720" y="270" font-size="34" fill="#e03030" font-weight="bold" text-anchor="middle">定義を参照</text>
 </svg>
