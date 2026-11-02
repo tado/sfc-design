@@ -32,12 +32,12 @@ image: "https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/06_
 - 提出期限 11/12/2026
 
 <!-- 提出フォームのURLを追加 -->
-[課題提出フォーム](URL)
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSddFI0GbUhYCPa4BTPwTCkbbAiBZMwddHeW2a8OoZPsymwcAA/viewform?usp=publish-editor)
 
 ## スライド資料
 
 <!-- スライド資料へのリンクを追加 -->
-[スライド資料: 関数によるモジュール化とバリエーション](URL)
+[スライド資料: 関数によるモジュール化とバリエーション](https://drive.google.com/file/d/1RnLECu--wQHJ-b2raWqtvPFb8-NgqGiB/view?usp=sharing)
 
 ## 今日の内容
 
@@ -434,4 +434,4 @@ function flower(center, numPetal, petalSize) {
 - 提出期限 11/12/2026
 
 <!-- 提出フォームのURLを追加 -->
-[課題提出フォーム](URL)
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSddFI0GbUhYCPa4BTPwTCkbbAiBZMwddHeW2a8OoZPsymwcAA/viewform?usp=publish-editor)
