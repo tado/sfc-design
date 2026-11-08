@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="730 405 1070 535" width="1070" height="535" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+  <circle cx="958" cy="630" r="203" fill="#2277cc"/>
+  <line x1="958" y1="427" x2="958" y2="833" stroke="#fff" stroke-width="4"/>
+  <line x1="755" y1="630" x2="1161" y2="630" stroke="#fff" stroke-width="4"/>
+  <circle cx="958" cy="630" r="124" fill="#1a5fa8" stroke="#fff" stroke-width="4"/>
+  <text x="958" y="630" font-size="34" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="bold">Property</text>
+  <text x="844" y="521" font-size="30" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="normal" transform="rotate(-45 844 521)">Method</text>
+  <text x="1073" y="521" font-size="30" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="normal" transform="rotate(45 1073 521)">Method</text>
+  <text x="1073" y="736" font-size="30" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="normal" transform="rotate(-45 1073 736)">Method</text>
+  <text x="844" y="736" font-size="30" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="normal" transform="rotate(45 844 736)">Method</text>
+  <text x="958" y="883" font-size="40" fill="#444" text-anchor="middle" dominant-baseline="central" font-weight="bold">Object</text>
+  <text x="1182" y="600" font-size="38" fill="#444" text-anchor="start" dominant-baseline="central" font-weight="normal">Property → position</text>
+  <text x="1182" y="656" font-size="38" fill="#444" text-anchor="start" dominant-baseline="central" font-weight="normal">Method → constructor(), draw()</text>
+</svg>

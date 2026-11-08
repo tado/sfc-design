@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="420 320 1200 530" width="1200" height="530" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+  <path d="M873,517 H923 V492 L973,542 L923,592 V567 H873 z" fill="#2277cc"/>
+  <circle cx="568" cy="542" r="37" fill="#2277cc"/>
+  <circle cx="1232" cy="480" r="16" fill="#2277cc"/>
+  <circle cx="1260" cy="555" r="16" fill="#2277cc"/>
+  <circle cx="1298" cy="498" r="16" fill="#2277cc"/>
+  <circle cx="1138" cy="518" r="16" fill="#2277cc"/>
+  <circle cx="1166" cy="592" r="16" fill="#2277cc"/>
+  <circle cx="1204" cy="536" r="16" fill="#2277cc"/>
+  <circle cx="1150" cy="390" r="16" fill="#2277cc"/>
+  <circle cx="1178" cy="466" r="16" fill="#2277cc"/>
+  <circle cx="1215" cy="409" r="16" fill="#2277cc"/>
+  <circle cx="1266" cy="352" r="16" fill="#2277cc"/>
+  <circle cx="1294" cy="428" r="16" fill="#2277cc"/>
+  <circle cx="1331" cy="372" r="16" fill="#2277cc"/>
+  <circle cx="1436" cy="544" r="16" fill="#2277cc"/>
+  <circle cx="1382" cy="666" r="16" fill="#2277cc"/>
+  <circle cx="1502" cy="562" r="16" fill="#2277cc"/>
+  <circle cx="1342" cy="580" r="16" fill="#2277cc"/>
+  <circle cx="1408" cy="600" r="16" fill="#2277cc"/>
+  <circle cx="1353" cy="454" r="16" fill="#2277cc"/>
+  <circle cx="1382" cy="529" r="16" fill="#2277cc"/>
+  <circle cx="1419" cy="472" r="16" fill="#2277cc"/>
+  <circle cx="1469" cy="416" r="16" fill="#2277cc"/>
+  <circle cx="1498" cy="492" r="16" fill="#2277cc"/>
+  <circle cx="1397" cy="372" r="16" fill="#2277cc"/>
+  <circle cx="1224" cy="656" r="16" fill="#2277cc"/>
+  <circle cx="1258" cy="606" r="16" fill="#2277cc"/>
+  <circle cx="1156" cy="668" r="16" fill="#2277cc"/>
+  <circle cx="1436" cy="706" r="16" fill="#2277cc"/>
+  <circle cx="1466" cy="638" r="16" fill="#2277cc"/>
+  <circle cx="1306" cy="682" r="16" fill="#2277cc"/>
+  <circle cx="1260" cy="732" r="16" fill="#2277cc"/>
+  <circle cx="1346" cy="630" r="16" fill="#2277cc"/>
+  <text x="568" y="640" font-size="40" fill="#444" text-anchor="middle" dominant-baseline="central" font-weight="normal" font-family="Menlo, monospace">walker</text>
+  <text x="1320" y="800" font-size="40" fill="#444" text-anchor="middle" dominant-baseline="central" font-weight="normal" font-family="Menlo, monospace">walker[0] 〜 walker[99]</text>
+</svg>

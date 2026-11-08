@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="490 420 940 480" width="940" height="480" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+  <line x1="822" y1="614" x2="591" y2="499" stroke="#444" stroke-width="7" marker-end="url(#a)"/>
+  <line x1="822" y1="684" x2="712" y2="794" stroke="#444" stroke-width="7" marker-end="url(#a)"/>
+  <line x1="562" y1="528" x2="644" y2="774" stroke="#444" stroke-width="7" marker-end="url(#a)"/>
+  <line x1="705" y1="827" x2="1319" y2="837" stroke="#444" stroke-width="7" marker-end="url(#a)"/>
+  <line x1="1348" y1="769" x2="1258" y2="589" stroke="#444" stroke-width="7" marker-end="url(#a)"/>
+  <line x1="1174" y1="518" x2="599" y2="472" stroke="#444" stroke-width="7" marker-end="url(#a)"/>
+  <line x1="1174" y1="567" x2="907" y2="611" stroke="#444" stroke-width="7" marker-end="url(#a)"/>
+  <circle cx="865" cy="628" r="37" fill="#2277cc"/>
+  <circle cx="551" cy="476" r="37" fill="#2277cc"/>
+  <circle cx="659" cy="822" r="37" fill="#2277cc"/>
+  <circle cx="1223" cy="538" r="37" fill="#2277cc"/>
+  <circle cx="1365" cy="838" r="37" fill="#2277cc"/>
+  <rect x="938" y="663" width="280" height="100" rx="12" fill="#fff" fill-opacity="0.85"/>
+  <text x="1078" y="713" font-size="64" fill="#2277cc" text-anchor="middle" dominant-baseline="central" font-weight="bold">OOP</text>
+</svg>

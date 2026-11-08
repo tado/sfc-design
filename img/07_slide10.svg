@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="820 490 276 277" width="276" height="277" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+  <circle cx="958" cy="629" r="118" fill="#2277cc"/>
+  <text x="958" y="629" font-size="44" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="bold">Object</text>
+</svg>

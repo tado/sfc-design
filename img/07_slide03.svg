@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="570 340 780 730" width="780" height="730" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+  <circle cx="962" cy="704" r="56" fill="#2277cc"/>
+  <circle cx="962" cy="475" r="56" fill="#2277cc"/>
+  <text x="962" y="475" font-size="44" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="bold">N</text>
+  <circle cx="962" cy="933" r="56" fill="#2277cc"/>
+  <text x="962" y="933" font-size="44" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="bold">S</text>
+  <circle cx="738" cy="704" r="56" fill="#2277cc"/>
+  <text x="738" y="704" font-size="44" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="bold">W</text>
+  <circle cx="1182" cy="704" r="56" fill="#2277cc"/>
+  <text x="1182" y="704" font-size="44" fill="#fff" text-anchor="middle" dominant-baseline="central" font-weight="bold">E</text>
+  <line x1="962" y1="653" x2="962" y2="542" stroke="#444" stroke-width="6" marker-end="url(#a)"/>
+  <line x1="907" y1="703" x2="797" y2="703" stroke="#444" stroke-width="6" marker-end="url(#a)"/>
+  <line x1="1016" y1="704" x2="1127" y2="704" stroke="#444" stroke-width="6" marker-end="url(#a)"/>
+  <line x1="961" y1="757" x2="961" y2="867" stroke="#444" stroke-width="6" marker-end="url(#a)"/>
+  <text x="958" y="380" font-size="40" fill="#444" text-anchor="middle" dominant-baseline="central" font-weight="normal">1.0</text>
+  <text x="1290" y="704" font-size="40" fill="#444" text-anchor="middle" dominant-baseline="central" font-weight="normal">1.0</text>
+  <text x="630" y="704" font-size="40" fill="#444" text-anchor="middle" dominant-baseline="central" font-weight="normal">1.0</text>
+  <text x="960" y="1028" font-size="40" fill="#444" text-anchor="middle" dominant-baseline="central" font-weight="normal">1.0</text>
+</svg>
