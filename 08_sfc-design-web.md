@@ -30,12 +30,12 @@ image: "https://i0.wp.com/raw.githubusercontent.com/tado/sfc-design/main/img/08_
 - 提出期限 12/03/2026
 
 <!-- 提出フォームのURLを追加 -->
-[課題提出フォーム](URL)
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSeWVxWTOYe5PKqFm-O4EXPnb6jMghJ2KcZ37xoVUmVploKD5w/viewform?usp=publish-editor)
 
 ## スライド資料
 
 <!-- スライド資料へのリンクを追加 -->
-[スライド資料: p5.js オブジェクト指向プログラミング 2 - コンストラクターと、オブジェクトのバリエーション](URL)
+[スライド資料: p5.js オブジェクト指向プログラミング 2 - コンストラクターと、オブジェクトのバリエーション](https://drive.google.com/file/d/1jLEJKLSXT3zIi3kOn0zDZLjSh4Zcl2Qj/view?usp=sharing)
 
 ## 今日の内容
 
@@ -497,4 +497,4 @@ function mouseClicked() {
 - 提出期限 12/03/2026
 
 <!-- 提出フォームのURLを追加 -->
-[課題提出フォーム](URL)
+[課題提出フォーム](https://docs.google.com/forms/d/e/1FAIpQLSeWVxWTOYe5PKqFm-O4EXPnb6jMghJ2KcZ37xoVUmVploKD5w/viewform?usp=publish-editor)
